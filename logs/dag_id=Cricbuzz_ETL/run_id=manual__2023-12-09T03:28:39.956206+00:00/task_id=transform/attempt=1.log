@@ -1,0 +1,17 @@
+[2023-12-09T08:59:03.616+0530] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Cricbuzz_ETL.transform manual__2023-12-09T03:28:39.956206+00:00 [queued]>
+[2023-12-09T08:59:03.620+0530] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Cricbuzz_ETL.transform manual__2023-12-09T03:28:39.956206+00:00 [queued]>
+[2023-12-09T08:59:03.620+0530] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-12-09T08:59:03.628+0530] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): transform> on 2023-12-09 03:28:39.956206+00:00
+[2023-12-09T08:59:03.631+0530] {standard_task_runner.py:57} INFO - Started process 42902 to run task
+[2023-12-09T08:59:03.633+0530] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'Cricbuzz_ETL', 'transform', 'manual__2023-12-09T03:28:39.956206+00:00', '--job-id', '63', '--raw', '--subdir', 'DAGS_FOLDER/Crickbuzz_dag.py', '--cfg-path', '/tmp/tmpaiocv10v']
+[2023-12-09T08:59:03.634+0530] {standard_task_runner.py:85} INFO - Job 63: Subtask transform
+[2023-12-09T08:59:03.653+0530] {task_command.py:416} INFO - Running <TaskInstance: Cricbuzz_ETL.transform manual__2023-12-09T03:28:39.956206+00:00 [running]> on host Iris
+[2023-12-09T08:59:03.688+0530] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='Cricbuzz_ETL' AIRFLOW_CTX_TASK_ID='transform' AIRFLOW_CTX_EXECUTION_DATE='2023-12-09T03:28:39.956206+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-12-09T03:28:39.956206+00:00'
+[2023-12-09T08:59:03.697+0530] {logging_mixin.py:154} INFO - AUS IND
+[2023-12-09T08:59:03.698+0530] {logging_mixin.py:154} INFO - hi
+[2023-12-09T08:59:03.700+0530] {logging_mixin.py:154} INFO - bat
+[2023-12-09T08:59:04.897+0530] {logging_mixin.py:154} INFO - https://www.cricbuzz.com/cricket-scores/75437/ind-vs-aus-5th-match-icc-cricket-world-cup-2023
+[2023-12-09T08:59:05.326+0530] {python.py:194} INFO - Done. Returned value was: None
+[2023-12-09T08:59:05.328+0530] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=Cricbuzz_ETL, task_id=transform, execution_date=20231209T032839, start_date=20231209T032903, end_date=20231209T032905
+[2023-12-09T08:59:05.370+0530] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-09T08:59:05.383+0530] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
