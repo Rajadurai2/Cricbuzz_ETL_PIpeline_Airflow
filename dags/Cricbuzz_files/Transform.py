@@ -1,11 +1,11 @@
-def clean():
-    url = "https://www.cricbuzz.com/cricket-full-commentary/75437/ind-vs-aus-5th-match-icc-cricket-world-cup-2023" 
+def clean(url):
+    #url = "https://www.cricbuzz.com/cricket-full-commentary/75437/ind-vs-aus-5th-match-icc-cricket-world-cup-2023" 
     file_name=url.split('/')[-1]
     import pandas as pd
     import re
     import requests
     from bs4 import BeautifulSoup
-    df=pd.read_csv(f'{file_name}.csv')
+    df=pd.read_csv(f'Scraped__raw_files/{file_name}.csv')
 
 
     def short_name(team):
@@ -429,9 +429,30 @@ def clean():
     find_match_no()
     get_moth()
     
-    df.to_csv(f"cleaned_{file_name}.csv",index=False)
+    df.to_csv(f"Transformed_files/cleaned_{file_name}.csv",index=False)
     
 
+def Transform_multiple_files(url,**kwargs):
+    ti = kwargs['ti']
+    execution_date = kwargs['ds']
+    # Retrieve the result from XCom
+    match_url = ti.xcom_pull(task_ids='Get_schedule', key=execution_date)
 
+    print(match_url)
+    print(type(match_url))
 
+    
 
+    if len(match_url)>1:
+        print("working")
+        for link in match_url :
+            print(f'----------------{link}started------------------------')
+            clean(link)
+            print(f'-----------------------{link}ended---------------------------')
+    elif len(match_url) == 1:
+        print("1-link",match_url[0])
+
+        clean(match_url[0])
+    
+    else :
+        print("errrrrrrorrrrrrrrrrrrrrrrrrrr.......................")

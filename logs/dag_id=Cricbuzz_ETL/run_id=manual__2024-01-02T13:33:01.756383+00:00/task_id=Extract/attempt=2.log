@@ -1,0 +1,24 @@
+[2024-01-02T19:06:28.621+0530] {taskinstance.py:1149} INFO - Dependencies not met for <TaskInstance: Cricbuzz_ETL.Extract manual__2024-01-02T13:33:01.756383+00:00 [up_for_retry]>, dependency 'Not In Retry Period' FAILED: Task is not ready for retry yet but will be retried automatically. Current date is 2024-01-02T13:36:28.621914+00:00 and task will be retried at 2024-01-02T13:36:46.846114+00:00.
+[2024-01-02T19:06:28.622+0530] {local_task_job_runner.py:154} INFO - Task is not able to be run
+[2024-01-02T19:14:38.137+0530] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Cricbuzz_ETL.Extract manual__2024-01-02T13:33:01.756383+00:00 [queued]>
+[2024-01-02T19:14:38.141+0530] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Cricbuzz_ETL.Extract manual__2024-01-02T13:33:01.756383+00:00 [queued]>
+[2024-01-02T19:14:38.141+0530] {taskinstance.py:1361} INFO - Starting attempt 2 of 2
+[2024-01-02T19:14:38.151+0530] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): Extract> on 2024-01-02 13:33:01.756383+00:00
+[2024-01-02T19:14:38.153+0530] {standard_task_runner.py:57} INFO - Started process 31092 to run task
+[2024-01-02T19:14:38.155+0530] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'Cricbuzz_ETL', 'Extract', 'manual__2024-01-02T13:33:01.756383+00:00', '--job-id', '587', '--raw', '--subdir', 'DAGS_FOLDER/Crickbuzz_dag.py', '--cfg-path', '/tmp/tmp_rynmfft']
+[2024-01-02T19:14:38.156+0530] {standard_task_runner.py:85} INFO - Job 587: Subtask Extract
+[2024-01-02T19:14:38.175+0530] {task_command.py:416} INFO - Running <TaskInstance: Cricbuzz_ETL.Extract manual__2024-01-02T13:33:01.756383+00:00 [running]> on host Iris
+[2024-01-02T19:14:38.210+0530] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='Cricbuzz_ETL' AIRFLOW_CTX_TASK_ID='Extract' AIRFLOW_CTX_EXECUTION_DATE='2024-01-02T13:33:01.756383+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-01-02T13:33:01.756383+00:00'
+[2024-01-02T19:14:38.214+0530] {logging_mixin.py:154} INFO - ['https://www.cricbuzz.com/cricket-full-commentary/66183/srh-vs-rr-4th-match-indian-premier-league-2023']
+[2024-01-02T19:14:38.215+0530] {logging_mixin.py:154} INFO - <class 'list'>
+[2024-01-02T19:14:38.215+0530] {logging_mixin.py:154} INFO - 1-link https://www.cricbuzz.com/cricket-full-commentary/66183/srh-vs-rr-4th-match-indian-premier-league-2023
+[2024-01-02T19:14:38.215+0530] {logging_mixin.py:154} INFO - Welcome
+[2024-01-02T19:14:38.651+0530] {logging_mixin.py:154} INFO - driver created succesfully
+[2024-01-02T19:14:42.534+0530] {logging_mixin.py:154} INFO - page loaded
+[2024-01-02T19:14:48.676+0530] {logging_mixin.py:154} INFO - RR Inns  Analysed
+[2024-01-02T19:14:53.877+0530] {logging_mixin.py:154} INFO - SRH Inns  Analysed
+[2024-01-02T19:14:53.877+0530] {logging_mixin.py:154} INFO - Full scraping of key events complete...
+[2024-01-02T19:14:53.996+0530] {python.py:194} INFO - Done. Returned value was: None
+[2024-01-02T19:14:53.999+0530] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=Cricbuzz_ETL, task_id=Extract, execution_date=20240102T133301, start_date=20240102T134438, end_date=20240102T134453
+[2024-01-02T19:14:54.013+0530] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2024-01-02T19:14:54.024+0530] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check

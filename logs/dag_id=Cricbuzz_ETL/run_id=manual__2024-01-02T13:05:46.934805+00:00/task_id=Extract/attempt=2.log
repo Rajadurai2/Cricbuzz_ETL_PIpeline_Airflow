@@ -1,0 +1,62 @@
+[2024-01-02T18:36:11.900+0530] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Cricbuzz_ETL.Extract manual__2024-01-02T13:05:46.934805+00:00 [queued]>
+[2024-01-02T18:36:11.904+0530] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Cricbuzz_ETL.Extract manual__2024-01-02T13:05:46.934805+00:00 [queued]>
+[2024-01-02T18:36:11.904+0530] {taskinstance.py:1361} INFO - Starting attempt 2 of 2
+[2024-01-02T18:36:11.914+0530] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): Extract> on 2024-01-02 13:05:46.934805+00:00
+[2024-01-02T18:36:11.916+0530] {standard_task_runner.py:57} INFO - Started process 8456 to run task
+[2024-01-02T18:36:11.918+0530] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'Cricbuzz_ETL', 'Extract', 'manual__2024-01-02T13:05:46.934805+00:00', '--job-id', '561', '--raw', '--subdir', 'DAGS_FOLDER/Crickbuzz_dag.py', '--cfg-path', '/tmp/tmpwax14pla']
+[2024-01-02T18:36:11.918+0530] {standard_task_runner.py:85} INFO - Job 561: Subtask Extract
+[2024-01-02T18:36:11.939+0530] {task_command.py:416} INFO - Running <TaskInstance: Cricbuzz_ETL.Extract manual__2024-01-02T13:05:46.934805+00:00 [running]> on host Iris
+[2024-01-02T18:36:11.973+0530] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='Cricbuzz_ETL' AIRFLOW_CTX_TASK_ID='Extract' AIRFLOW_CTX_EXECUTION_DATE='2024-01-02T13:05:46.934805+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-01-02T13:05:46.934805+00:00'
+[2024-01-02T18:36:11.976+0530] {logging_mixin.py:154} INFO - ['https://www.cricbuzz.com/cricket-full-commentary/66183/srh-vs-rr-4th-match-indian-premier-league-2023']
+[2024-01-02T18:36:11.977+0530] {logging_mixin.py:154} INFO - ['https://www.cricbuzz.com/cricket-full-commentary/66183/srh-vs-rr-4th-match-indian-premier-league-2023']
+[2024-01-02T18:36:11.977+0530] {logging_mixin.py:154} INFO - <class 'list'>
+[2024-01-02T18:36:11.977+0530] {logging_mixin.py:154} INFO - ['https://www.cricbuzz.com/cricket-full-commentary/66183/srh-vs-rr-4th-match-indian-premier-league-2023']
+[2024-01-02T18:37:33.205+0530] {process_utils.py:131} INFO - Sending Signals.SIGTERM to group 8456. PIDs of all processes in the group: [8456]
+[2024-01-02T18:37:33.205+0530] {process_utils.py:86} INFO - Sending the signal Signals.SIGTERM to group 8456
+[2024-01-02T18:37:33.205+0530] {taskinstance.py:1632} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-01-02T18:37:33.212+0530] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/rajabala/Desktop/projects/Airflow/dags/Cricbuzz_files/Extract.py", line 270, in Scrap_multiple_sites
+    web_scrap(url)
+  File "/home/rajabala/Desktop/projects/Airflow/dags/Cricbuzz_files/Extract.py", line 32, in web_scrap
+    driver = webdriver.Remote(command_executor=selenium_url, options=chrome_options)
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 209, in __init__
+    self.start_session(capabilities)
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 293, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 346, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 300, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 321, in _request
+    response = self._conn.request(method, url, body=body, headers=headers)
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/urllib3/_request_methods.py", line 118, in request
+    return self.request_encode_body(
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/urllib3/_request_methods.py", line 217, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/urllib3/poolmanager.py", line 444, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/urllib3/connectionpool.py", line 790, in urlopen
+    response = self._make_request(
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/urllib3/connection.py", line 461, in getresponse
+    httplib_response = super().getresponse()
+  File "/home/rajabala/anaconda3/lib/python3.9/http/client.py", line 1377, in getresponse
+    response.begin()
+  File "/home/rajabala/anaconda3/lib/python3.9/http/client.py", line 320, in begin
+    version, status, reason = self._read_status()
+  File "/home/rajabala/anaconda3/lib/python3.9/http/client.py", line 281, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/home/rajabala/anaconda3/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1634, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2024-01-02T18:37:33.218+0530] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=Cricbuzz_ETL, task_id=Extract, execution_date=20240102T130546, start_date=20240102T130611, end_date=20240102T130733
+[2024-01-02T18:37:33.228+0530] {standard_task_runner.py:104} ERROR - Failed to execute job 561 for task Extract (Task received SIGTERM signal; 8456)
+[2024-01-02T18:37:33.257+0530] {process_utils.py:79} INFO - Process psutil.Process(pid=8456, status='terminated', exitcode=1, started='18:36:11') (8456) terminated with exit code 1

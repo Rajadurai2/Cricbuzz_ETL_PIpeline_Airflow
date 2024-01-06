@@ -1,0 +1,89 @@
+[2024-01-04T01:04:09.626+0530] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Cricbuzz_ETL.Extract manual__2024-01-03T19:34:04.884688+00:00 [queued]>
+[2024-01-04T01:04:09.631+0530] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Cricbuzz_ETL.Extract manual__2024-01-03T19:34:04.884688+00:00 [queued]>
+[2024-01-04T01:04:09.631+0530] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2024-01-04T01:04:09.645+0530] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): Extract> on 2024-01-03 19:34:04.884688+00:00
+[2024-01-04T01:04:09.647+0530] {standard_task_runner.py:57} INFO - Started process 43912 to run task
+[2024-01-04T01:04:09.650+0530] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'Cricbuzz_ETL', 'Extract', 'manual__2024-01-03T19:34:04.884688+00:00', '--job-id', '712', '--raw', '--subdir', 'DAGS_FOLDER/Crickbuzz_dag.py', '--cfg-path', '/tmp/tmpobl1z3qn']
+[2024-01-04T01:04:09.651+0530] {standard_task_runner.py:85} INFO - Job 712: Subtask Extract
+[2024-01-04T01:04:09.682+0530] {task_command.py:416} INFO - Running <TaskInstance: Cricbuzz_ETL.Extract manual__2024-01-03T19:34:04.884688+00:00 [running]> on host Iris
+[2024-01-04T01:04:09.734+0530] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='Cricbuzz_ETL' AIRFLOW_CTX_TASK_ID='Extract' AIRFLOW_CTX_EXECUTION_DATE='2024-01-03T19:34:04.884688+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-01-03T19:34:04.884688+00:00'
+[2024-01-04T01:04:09.740+0530] {logging_mixin.py:154} INFO - ['https://www.cricbuzz.com/cricket-full-commentary/66169/gt-vs-csk-1st-match-indian-premier-league-2023']
+[2024-01-04T01:04:09.740+0530] {logging_mixin.py:154} INFO - <class 'list'>
+[2024-01-04T01:04:09.740+0530] {logging_mixin.py:154} INFO - 1-link https://www.cricbuzz.com/cricket-full-commentary/66169/gt-vs-csk-1st-match-indian-premier-league-2023
+[2024-01-04T01:04:09.741+0530] {logging_mixin.py:154} INFO - Welcome
+[2024-01-04T01:04:10.094+0530] {connectionpool.py:871} WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7fc87f9c6550>: Failed to resolve 'chrome' ([Errno -3] Temporary failure in name resolution)")': /wd/hub/session
+[2024-01-04T01:04:10.095+0530] {connectionpool.py:871} WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7fc87f9c6880>: Failed to resolve 'chrome' ([Errno -3] Temporary failure in name resolution)")': /wd/hub/session
+[2024-01-04T01:04:10.097+0530] {connectionpool.py:871} WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7fc87f9c6c70>: Failed to resolve 'chrome' ([Errno -3] Temporary failure in name resolution)")': /wd/hub/session
+[2024-01-04T01:04:10.097+0530] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/urllib3/connection.py", line 203, in _new_conn
+    sock = connection.create_connection(
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/home/rajabala/anaconda3/lib/python3.9/socket.py", line 954, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/urllib3/connectionpool.py", line 790, in urlopen
+    response = self._make_request(
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/urllib3/connectionpool.py", line 496, in _make_request
+    conn.request(
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/urllib3/connection.py", line 395, in request
+    self.endheaders()
+  File "/home/rajabala/anaconda3/lib/python3.9/http/client.py", line 1280, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/home/rajabala/anaconda3/lib/python3.9/http/client.py", line 1040, in _send_output
+    self.send(msg)
+  File "/home/rajabala/anaconda3/lib/python3.9/http/client.py", line 980, in send
+    self.connect()
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/urllib3/connection.py", line 243, in connect
+    self.sock = self._new_conn()
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/urllib3/connection.py", line 210, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPConnection object at 0x7fc87f9c6e50>: Failed to resolve 'chrome' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/rajabala/Desktop/projects/Airflow/dags/Cricbuzz_files/Extract.py", line 272, in Scrap_multiple_sites
+    web_scrap(url[0])
+  File "/home/rajabala/Desktop/projects/Airflow/dags/Cricbuzz_files/Extract.py", line 32, in web_scrap
+    driver = webdriver.Remote(command_executor=selenium_url, options=chrome_options)
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 209, in __init__
+    self.start_session(capabilities)
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 293, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 346, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 300, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 321, in _request
+    response = self._conn.request(method, url, body=body, headers=headers)
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/urllib3/_request_methods.py", line 118, in request
+    return self.request_encode_body(
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/urllib3/_request_methods.py", line 217, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/urllib3/poolmanager.py", line 444, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/urllib3/connectionpool.py", line 874, in urlopen
+    return self.urlopen(
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/urllib3/connectionpool.py", line 874, in urlopen
+    return self.urlopen(
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/urllib3/connectionpool.py", line 874, in urlopen
+    return self.urlopen(
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/urllib3/connectionpool.py", line 844, in urlopen
+    retries = retries.increment(
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/urllib3/util/retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='chrome', port=4444): Max retries exceeded with url: /wd/hub/session (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7fc87f9c6e50>: Failed to resolve 'chrome' ([Errno -3] Temporary failure in name resolution)"))
+[2024-01-04T01:04:10.104+0530] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=Cricbuzz_ETL, task_id=Extract, execution_date=20240103T193404, start_date=20240103T193409, end_date=20240103T193410
+[2024-01-04T01:04:10.116+0530] {standard_task_runner.py:104} ERROR - Failed to execute job 712 for task Extract (HTTPConnectionPool(host='chrome', port=4444): Max retries exceeded with url: /wd/hub/session (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7fc87f9c6e50>: Failed to resolve 'chrome' ([Errno -3] Temporary failure in name resolution)")); 43912)
+[2024-01-04T01:04:10.144+0530] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-01-04T01:04:10.164+0530] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

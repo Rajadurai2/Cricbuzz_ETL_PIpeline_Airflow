@@ -1,0 +1,68 @@
+[2024-01-02T17:20:57.703+0530] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Cricbuzz_ETL.skip_task scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2024-01-02T17:20:57.710+0530] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Cricbuzz_ETL.skip_task scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2024-01-02T17:20:57.710+0530] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2024-01-02T17:20:57.722+0530] {taskinstance.py:1382} INFO - Executing <Task(BashOperator): skip_task> on 2024-01-01 00:00:00+00:00
+[2024-01-02T17:20:57.725+0530] {standard_task_runner.py:57} INFO - Started process 11916 to run task
+[2024-01-02T17:20:57.728+0530] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'Cricbuzz_ETL', 'skip_task', 'scheduled__2024-01-01T00:00:00+00:00', '--job-id', '544', '--raw', '--subdir', 'DAGS_FOLDER/Crickbuzz_dag.py', '--cfg-path', '/tmp/tmpsrpzdfkm']
+[2024-01-02T17:20:57.729+0530] {standard_task_runner.py:85} INFO - Job 544: Subtask skip_task
+[2024-01-02T17:20:57.760+0530] {task_command.py:416} INFO - Running <TaskInstance: Cricbuzz_ETL.skip_task scheduled__2024-01-01T00:00:00+00:00 [running]> on host Iris
+[2024-01-02T17:20:57.811+0530] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='Cricbuzz_ETL' AIRFLOW_CTX_TASK_ID='skip_task' AIRFLOW_CTX_EXECUTION_DATE='2024-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-01T00:00:00+00:00'
+[2024-01-02T17:20:57.812+0530] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-01-02T17:20:57.812+0530] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'echo "skipped task"']
+[2024-01-02T17:20:57.818+0530] {subprocess.py:86} INFO - Output:
+[2024-01-02T17:20:57.819+0530] {subprocess.py:93} INFO - skipped task
+[2024-01-02T17:20:57.819+0530] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-01-02T17:20:57.834+0530] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=Cricbuzz_ETL, task_id=skip_task, execution_date=20240101T000000, start_date=20240102T115057, end_date=20240102T115057
+[2024-01-02T17:20:57.860+0530] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2024-01-02T17:20:57.874+0530] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-01-02T17:26:51.850+0530] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Cricbuzz_ETL.skip_task scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2024-01-02T17:26:51.856+0530] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Cricbuzz_ETL.skip_task scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2024-01-02T17:26:51.856+0530] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2024-01-02T17:26:51.869+0530] {taskinstance.py:1382} INFO - Executing <Task(BashOperator): skip_task> on 2024-01-01 00:00:00+00:00
+[2024-01-02T17:26:51.872+0530] {standard_task_runner.py:57} INFO - Started process 14916 to run task
+[2024-01-02T17:26:51.874+0530] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'Cricbuzz_ETL', 'skip_task', 'scheduled__2024-01-01T00:00:00+00:00', '--job-id', '548', '--raw', '--subdir', 'DAGS_FOLDER/Crickbuzz_dag.py', '--cfg-path', '/tmp/tmpnm1p0mp_']
+[2024-01-02T17:26:51.876+0530] {standard_task_runner.py:85} INFO - Job 548: Subtask skip_task
+[2024-01-02T17:26:51.904+0530] {task_command.py:416} INFO - Running <TaskInstance: Cricbuzz_ETL.skip_task scheduled__2024-01-01T00:00:00+00:00 [running]> on host Iris
+[2024-01-02T17:26:51.952+0530] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='Cricbuzz_ETL' AIRFLOW_CTX_TASK_ID='skip_task' AIRFLOW_CTX_EXECUTION_DATE='2024-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-01T00:00:00+00:00'
+[2024-01-02T17:26:51.953+0530] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-01-02T17:26:51.954+0530] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'echo "skipped task"']
+[2024-01-02T17:26:51.959+0530] {subprocess.py:86} INFO - Output:
+[2024-01-02T17:26:51.960+0530] {subprocess.py:93} INFO - skipped task
+[2024-01-02T17:26:51.960+0530] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-01-02T17:26:51.978+0530] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=Cricbuzz_ETL, task_id=skip_task, execution_date=20240101T000000, start_date=20240102T115651, end_date=20240102T115651
+[2024-01-02T17:26:52.007+0530] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2024-01-02T17:26:52.022+0530] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-01-02T17:55:19.605+0530] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Cricbuzz_ETL.skip_task scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2024-01-02T17:55:19.613+0530] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Cricbuzz_ETL.skip_task scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2024-01-02T17:55:19.613+0530] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2024-01-02T17:55:19.626+0530] {taskinstance.py:1382} INFO - Executing <Task(BashOperator): skip_task> on 2024-01-01 00:00:00+00:00
+[2024-01-02T17:55:19.629+0530] {standard_task_runner.py:57} INFO - Started process 25194 to run task
+[2024-01-02T17:55:19.632+0530] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'Cricbuzz_ETL', 'skip_task', 'scheduled__2024-01-01T00:00:00+00:00', '--job-id', '553', '--raw', '--subdir', 'DAGS_FOLDER/Crickbuzz_dag.py', '--cfg-path', '/tmp/tmpttwvbgbs']
+[2024-01-02T17:55:19.633+0530] {standard_task_runner.py:85} INFO - Job 553: Subtask skip_task
+[2024-01-02T17:55:19.662+0530] {task_command.py:416} INFO - Running <TaskInstance: Cricbuzz_ETL.skip_task scheduled__2024-01-01T00:00:00+00:00 [running]> on host Iris
+[2024-01-02T17:55:19.711+0530] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='Cricbuzz_ETL' AIRFLOW_CTX_TASK_ID='skip_task' AIRFLOW_CTX_EXECUTION_DATE='2024-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-01T00:00:00+00:00'
+[2024-01-02T17:55:19.712+0530] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-01-02T17:55:19.713+0530] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'echo "skipped task"']
+[2024-01-02T17:55:19.719+0530] {subprocess.py:86} INFO - Output:
+[2024-01-02T17:55:19.720+0530] {subprocess.py:93} INFO - skipped task
+[2024-01-02T17:55:19.720+0530] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-01-02T17:55:19.736+0530] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=Cricbuzz_ETL, task_id=skip_task, execution_date=20240101T000000, start_date=20240102T122519, end_date=20240102T122519
+[2024-01-02T17:55:19.763+0530] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2024-01-02T17:55:19.777+0530] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-01-02T18:54:01.652+0530] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Cricbuzz_ETL.skip_task scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2024-01-02T18:54:01.657+0530] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Cricbuzz_ETL.skip_task scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2024-01-02T18:54:01.658+0530] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2024-01-02T18:54:01.667+0530] {taskinstance.py:1382} INFO - Executing <Task(BashOperator): skip_task> on 2024-01-01 00:00:00+00:00
+[2024-01-02T18:54:01.669+0530] {standard_task_runner.py:57} INFO - Started process 19289 to run task
+[2024-01-02T18:54:01.671+0530] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'Cricbuzz_ETL', 'skip_task', 'scheduled__2024-01-01T00:00:00+00:00', '--job-id', '565', '--raw', '--subdir', 'DAGS_FOLDER/Crickbuzz_dag.py', '--cfg-path', '/tmp/tmps1khyjhz']
+[2024-01-02T18:54:01.671+0530] {standard_task_runner.py:85} INFO - Job 565: Subtask skip_task
+[2024-01-02T18:54:01.693+0530] {task_command.py:416} INFO - Running <TaskInstance: Cricbuzz_ETL.skip_task scheduled__2024-01-01T00:00:00+00:00 [running]> on host Iris
+[2024-01-02T18:54:01.725+0530] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='Cricbuzz_ETL' AIRFLOW_CTX_TASK_ID='skip_task' AIRFLOW_CTX_EXECUTION_DATE='2024-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-01T00:00:00+00:00'
+[2024-01-02T18:54:01.726+0530] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-01-02T18:54:01.727+0530] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'echo "skipped task"']
+[2024-01-02T18:54:01.731+0530] {subprocess.py:86} INFO - Output:
+[2024-01-02T18:54:01.731+0530] {subprocess.py:93} INFO - skipped task
+[2024-01-02T18:54:01.732+0530] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-01-02T18:54:01.743+0530] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=Cricbuzz_ETL, task_id=skip_task, execution_date=20240101T000000, start_date=20240102T132401, end_date=20240102T132401
+[2024-01-02T18:54:01.762+0530] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2024-01-02T18:54:01.771+0530] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,32 @@
+[2024-01-02T19:19:26.388+0530] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Cricbuzz_ETL.Extract manual__2024-01-02T13:49:22.228810+00:00 [queued]>
+[2024-01-02T19:19:26.392+0530] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Cricbuzz_ETL.Extract manual__2024-01-02T13:49:22.228810+00:00 [queued]>
+[2024-01-02T19:19:26.392+0530] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2024-01-02T19:19:26.402+0530] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): Extract> on 2024-01-02 13:49:22.228810+00:00
+[2024-01-02T19:19:26.404+0530] {standard_task_runner.py:57} INFO - Started process 34042 to run task
+[2024-01-02T19:19:26.406+0530] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'Cricbuzz_ETL', 'Extract', 'manual__2024-01-02T13:49:22.228810+00:00', '--job-id', '605', '--raw', '--subdir', 'DAGS_FOLDER/Crickbuzz_dag.py', '--cfg-path', '/tmp/tmp2vxxzux6']
+[2024-01-02T19:19:26.406+0530] {standard_task_runner.py:85} INFO - Job 605: Subtask Extract
+[2024-01-02T19:19:26.426+0530] {task_command.py:416} INFO - Running <TaskInstance: Cricbuzz_ETL.Extract manual__2024-01-02T13:49:22.228810+00:00 [running]> on host Iris
+[2024-01-02T19:19:26.460+0530] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='Cricbuzz_ETL' AIRFLOW_CTX_TASK_ID='Extract' AIRFLOW_CTX_EXECUTION_DATE='2024-01-02T13:49:22.228810+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-01-02T13:49:22.228810+00:00'
+[2024-01-02T19:19:26.464+0530] {logging_mixin.py:154} INFO - ['https://www.cricbuzz.com/cricket-full-commentary/66173/pbks-vs-kkr-2nd-match-indian-premier-league-2023', 'https://www.cricbuzz.com/cricket-full-commentary/66176/lsg-vs-dc-3rd-match-indian-premier-league-2023']
+[2024-01-02T19:19:26.464+0530] {logging_mixin.py:154} INFO - <class 'list'>
+[2024-01-02T19:19:26.464+0530] {logging_mixin.py:154} INFO - working
+[2024-01-02T19:19:26.465+0530] {logging_mixin.py:154} INFO - https://www.cricbuzz.com/cricket-full-commentary/66173/pbks-vs-kkr-2nd-match-indian-premier-league-2023started.......................................
+[2024-01-02T19:19:26.465+0530] {logging_mixin.py:154} INFO - Welcome
+[2024-01-02T19:19:26.875+0530] {logging_mixin.py:154} INFO - driver created succesfully
+[2024-01-02T19:19:32.796+0530] {logging_mixin.py:154} INFO - page loaded
+[2024-01-02T19:19:38.829+0530] {logging_mixin.py:154} INFO - PBKS Inns  Analysed
+[2024-01-02T19:19:43.987+0530] {logging_mixin.py:154} INFO - KKR Inns  Analysed
+[2024-01-02T19:19:43.987+0530] {logging_mixin.py:154} INFO - Full scraping of key events complete...
+[2024-01-02T19:19:44.105+0530] {logging_mixin.py:154} INFO - https://www.cricbuzz.com/cricket-full-commentary/66173/pbks-vs-kkr-2nd-match-indian-premier-league-2023ended ..........................................
+[2024-01-02T19:19:44.106+0530] {logging_mixin.py:154} INFO - https://www.cricbuzz.com/cricket-full-commentary/66176/lsg-vs-dc-3rd-match-indian-premier-league-2023started.......................................
+[2024-01-02T19:19:44.106+0530] {logging_mixin.py:154} INFO - Welcome
+[2024-01-02T19:19:44.250+0530] {logging_mixin.py:154} INFO - driver created succesfully
+[2024-01-02T19:19:48.469+0530] {logging_mixin.py:154} INFO - page loaded
+[2024-01-02T19:19:54.126+0530] {logging_mixin.py:154} INFO - LSG Inns  Analysed
+[2024-01-02T19:19:59.338+0530] {logging_mixin.py:154} INFO - DC Inns  Analysed
+[2024-01-02T19:19:59.338+0530] {logging_mixin.py:154} INFO - Full scraping of key events complete...
+[2024-01-02T19:19:59.459+0530] {logging_mixin.py:154} INFO - https://www.cricbuzz.com/cricket-full-commentary/66176/lsg-vs-dc-3rd-match-indian-premier-league-2023ended ..........................................
+[2024-01-02T19:19:59.459+0530] {python.py:194} INFO - Done. Returned value was: None
+[2024-01-02T19:19:59.462+0530] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=Cricbuzz_ETL, task_id=Extract, execution_date=20240102T134922, start_date=20240102T134926, end_date=20240102T134959
+[2024-01-02T19:19:59.488+0530] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2024-01-02T19:19:59.507+0530] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check

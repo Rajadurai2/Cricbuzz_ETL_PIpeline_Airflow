@@ -1,0 +1,298 @@
+[2024-01-04T10:13:13.136+0530] {processor.py:157} INFO - Started process (PID=10479) to work on /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:13:13.137+0530] {processor.py:829} INFO - Processing file /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py for tasks to queue
+[2024-01-04T10:13:13.138+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:13:13.138+0530] {dagbag.py:536} INFO - Filling up the DagBag from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:13:13.144+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:13:13.143+0530] {dagbag.py:346} ERROR - Failed to import: /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+Traceback (most recent call last):
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py", line 4, in <module>
+    from airflow.providers.apache.hdfs.hooks.webhdfs import WebHDFSHook,get_conn
+ImportError: cannot import name 'get_conn' from 'airflow.providers.apache.hdfs.hooks.webhdfs' (/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/providers/apache/hdfs/hooks/webhdfs.py)
+[2024-01-04T10:13:13.144+0530] {processor.py:841} WARNING - No viable dags retrieved from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:13:13.164+0530] {processor.py:179} INFO - Processing /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py took 0.030 seconds
+[2024-01-04T10:13:44.226+0530] {processor.py:157} INFO - Started process (PID=11285) to work on /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:13:44.229+0530] {processor.py:829} INFO - Processing file /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py for tasks to queue
+[2024-01-04T10:13:44.230+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:13:44.230+0530] {dagbag.py:536} INFO - Filling up the DagBag from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:13:44.236+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:13:44.235+0530] {dagbag.py:346} ERROR - Failed to import: /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+Traceback (most recent call last):
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py", line 4, in <module>
+    from airflow.providers.apache.hdfs.hooks.webhdfs import WebHDFSHook,get_conn
+ImportError: cannot import name 'get_conn' from 'airflow.providers.apache.hdfs.hooks.webhdfs' (/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/providers/apache/hdfs/hooks/webhdfs.py)
+[2024-01-04T10:13:44.236+0530] {processor.py:841} WARNING - No viable dags retrieved from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:13:44.250+0530] {processor.py:179} INFO - Processing /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py took 0.027 seconds
+[2024-01-04T10:14:14.441+0530] {processor.py:157} INFO - Started process (PID=11415) to work on /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:14:14.444+0530] {processor.py:829} INFO - Processing file /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py for tasks to queue
+[2024-01-04T10:14:14.445+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:14:14.444+0530] {dagbag.py:536} INFO - Filling up the DagBag from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:14:14.451+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:14:14.450+0530] {dagbag.py:346} ERROR - Failed to import: /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+Traceback (most recent call last):
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py", line 4, in <module>
+    from airflow.providers.apache.hdfs.hooks.webhdfs import WebHDFSHook,get_conn
+ImportError: cannot import name 'get_conn' from 'airflow.providers.apache.hdfs.hooks.webhdfs' (/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/providers/apache/hdfs/hooks/webhdfs.py)
+[2024-01-04T10:14:14.452+0530] {processor.py:841} WARNING - No viable dags retrieved from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:14:14.465+0530] {processor.py:179} INFO - Processing /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py took 0.029 seconds
+[2024-01-04T10:14:44.667+0530] {processor.py:157} INFO - Started process (PID=11599) to work on /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:14:44.668+0530] {processor.py:829} INFO - Processing file /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py for tasks to queue
+[2024-01-04T10:14:44.669+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:14:44.668+0530] {dagbag.py:536} INFO - Filling up the DagBag from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:14:44.674+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:14:44.673+0530] {dagbag.py:346} ERROR - Failed to import: /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+Traceback (most recent call last):
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py", line 4, in <module>
+    from airflow.providers.apache.hdfs.hooks.webhdfs import WebHDFSHook,get_conn
+ImportError: cannot import name 'get_conn' from 'airflow.providers.apache.hdfs.hooks.webhdfs' (/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/providers/apache/hdfs/hooks/webhdfs.py)
+[2024-01-04T10:14:44.675+0530] {processor.py:841} WARNING - No viable dags retrieved from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:14:44.689+0530] {processor.py:179} INFO - Processing /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py took 0.025 seconds
+[2024-01-04T10:15:14.902+0530] {processor.py:157} INFO - Started process (PID=11752) to work on /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:15:14.906+0530] {processor.py:829} INFO - Processing file /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py for tasks to queue
+[2024-01-04T10:15:14.907+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:15:14.906+0530] {dagbag.py:536} INFO - Filling up the DagBag from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:15:14.913+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:15:14.912+0530] {dagbag.py:346} ERROR - Failed to import: /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+Traceback (most recent call last):
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py", line 4, in <module>
+    from airflow.providers.apache.hdfs.hooks.webhdfs import WebHDFSHook,get_conn
+ImportError: cannot import name 'get_conn' from 'airflow.providers.apache.hdfs.hooks.webhdfs' (/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/providers/apache/hdfs/hooks/webhdfs.py)
+[2024-01-04T10:15:14.913+0530] {processor.py:841} WARNING - No viable dags retrieved from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:15:14.930+0530] {processor.py:179} INFO - Processing /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py took 0.032 seconds
+[2024-01-04T10:15:18.903+0530] {processor.py:157} INFO - Started process (PID=11812) to work on /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:15:18.906+0530] {processor.py:829} INFO - Processing file /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py for tasks to queue
+[2024-01-04T10:15:18.907+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:15:18.906+0530] {dagbag.py:536} INFO - Filling up the DagBag from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:15:18.922+0530] {logging_mixin.py:154} WARNING - /home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-01-04T10:15:18.927+0530] {processor.py:839} INFO - DAG(s) dict_keys(['Cricbuzz_ETL']) retrieved from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:15:18.999+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:15:18.999+0530] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-04T10:15:19.013+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:15:19.013+0530] {dag.py:3722} INFO - Setting next_dagrun for Cricbuzz_ETL to 2024-01-03T00:00:00+00:00, run_after=2024-01-04T00:00:00+00:00
+[2024-01-04T10:15:19.037+0530] {processor.py:179} INFO - Processing /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py took 0.137 seconds
+[2024-01-04T10:15:49.147+0530] {processor.py:157} INFO - Started process (PID=12230) to work on /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:15:49.150+0530] {processor.py:829} INFO - Processing file /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py for tasks to queue
+[2024-01-04T10:15:49.151+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:15:49.151+0530] {dagbag.py:536} INFO - Filling up the DagBag from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:15:49.164+0530] {logging_mixin.py:154} WARNING - /home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-01-04T10:15:49.169+0530] {processor.py:839} INFO - DAG(s) dict_keys(['Cricbuzz_ETL']) retrieved from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:15:49.189+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:15:49.188+0530] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-04T10:15:49.207+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:15:49.207+0530] {dag.py:3722} INFO - Setting next_dagrun for Cricbuzz_ETL to 2024-01-04T00:00:00+00:00, run_after=2024-01-05T00:00:00+00:00
+[2024-01-04T10:15:49.227+0530] {processor.py:179} INFO - Processing /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py took 0.082 seconds
+[2024-01-04T10:16:19.434+0530] {processor.py:157} INFO - Started process (PID=12579) to work on /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:16:19.437+0530] {processor.py:829} INFO - Processing file /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py for tasks to queue
+[2024-01-04T10:16:19.438+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:16:19.437+0530] {dagbag.py:536} INFO - Filling up the DagBag from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:16:19.453+0530] {logging_mixin.py:154} WARNING - /home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-01-04T10:16:19.458+0530] {processor.py:839} INFO - DAG(s) dict_keys(['Cricbuzz_ETL']) retrieved from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:16:19.477+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:16:19.476+0530] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-04T10:16:19.492+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:16:19.492+0530] {dag.py:3722} INFO - Setting next_dagrun for Cricbuzz_ETL to 2024-01-04T00:00:00+00:00, run_after=2024-01-05T00:00:00+00:00
+[2024-01-04T10:16:19.507+0530] {processor.py:179} INFO - Processing /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py took 0.075 seconds
+[2024-01-04T10:16:49.699+0530] {processor.py:157} INFO - Started process (PID=12679) to work on /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:16:49.702+0530] {processor.py:829} INFO - Processing file /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py for tasks to queue
+[2024-01-04T10:16:49.703+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:16:49.703+0530] {dagbag.py:536} INFO - Filling up the DagBag from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:16:49.716+0530] {logging_mixin.py:154} WARNING - /home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-01-04T10:16:49.722+0530] {processor.py:839} INFO - DAG(s) dict_keys(['Cricbuzz_ETL']) retrieved from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:16:49.741+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:16:49.741+0530] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-04T10:16:49.757+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:16:49.756+0530] {dag.py:3722} INFO - Setting next_dagrun for Cricbuzz_ETL to 2024-01-04T00:00:00+00:00, run_after=2024-01-05T00:00:00+00:00
+[2024-01-04T10:16:49.773+0530] {processor.py:179} INFO - Processing /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py took 0.077 seconds
+[2024-01-04T10:17:20.018+0530] {processor.py:157} INFO - Started process (PID=12852) to work on /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:17:20.020+0530] {processor.py:829} INFO - Processing file /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py for tasks to queue
+[2024-01-04T10:17:20.021+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:17:20.021+0530] {dagbag.py:536} INFO - Filling up the DagBag from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:17:20.036+0530] {logging_mixin.py:154} WARNING - /home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-01-04T10:17:20.044+0530] {processor.py:839} INFO - DAG(s) dict_keys(['Cricbuzz_ETL']) retrieved from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:17:20.069+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:17:20.068+0530] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-04T10:17:20.090+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:17:20.089+0530] {dag.py:3722} INFO - Setting next_dagrun for Cricbuzz_ETL to 2024-01-04T00:00:00+00:00, run_after=2024-01-05T00:00:00+00:00
+[2024-01-04T10:17:20.111+0530] {processor.py:179} INFO - Processing /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py took 0.095 seconds
+[2024-01-04T10:17:50.348+0530] {processor.py:157} INFO - Started process (PID=13200) to work on /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:17:50.351+0530] {processor.py:829} INFO - Processing file /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py for tasks to queue
+[2024-01-04T10:17:50.352+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:17:50.352+0530] {dagbag.py:536} INFO - Filling up the DagBag from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:17:50.367+0530] {logging_mixin.py:154} WARNING - /home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-01-04T10:17:50.371+0530] {processor.py:839} INFO - DAG(s) dict_keys(['Cricbuzz_ETL']) retrieved from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:17:50.392+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:17:50.392+0530] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-04T10:17:50.412+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:17:50.412+0530] {dag.py:3722} INFO - Setting next_dagrun for Cricbuzz_ETL to 2024-01-04T00:00:00+00:00, run_after=2024-01-05T00:00:00+00:00
+[2024-01-04T10:17:50.431+0530] {processor.py:179} INFO - Processing /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py took 0.087 seconds
+[2024-01-04T10:18:20.679+0530] {processor.py:157} INFO - Started process (PID=13423) to work on /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:18:20.680+0530] {processor.py:829} INFO - Processing file /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py for tasks to queue
+[2024-01-04T10:18:20.681+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:18:20.680+0530] {dagbag.py:536} INFO - Filling up the DagBag from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:18:20.691+0530] {logging_mixin.py:154} WARNING - /home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-01-04T10:18:20.695+0530] {processor.py:839} INFO - DAG(s) dict_keys(['Cricbuzz_ETL']) retrieved from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:18:20.710+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:18:20.710+0530] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-04T10:18:20.724+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:18:20.724+0530] {dag.py:3722} INFO - Setting next_dagrun for Cricbuzz_ETL to 2024-01-04T00:00:00+00:00, run_after=2024-01-05T00:00:00+00:00
+[2024-01-04T10:18:20.738+0530] {processor.py:179} INFO - Processing /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py took 0.061 seconds
+[2024-01-04T10:18:31.846+0530] {processor.py:157} INFO - Started process (PID=13447) to work on /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:18:31.848+0530] {processor.py:829} INFO - Processing file /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py for tasks to queue
+[2024-01-04T10:18:31.850+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:18:31.849+0530] {dagbag.py:536} INFO - Filling up the DagBag from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:18:31.857+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:18:31.856+0530] {dagbag.py:346} ERROR - Failed to import: /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+Traceback (most recent call last):
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py", line 5, in <module>
+    from airflow.providers.apache.hdfs.transfers.hdfs_to_local import HdfsToLocalFilesystem
+ModuleNotFoundError: No module named 'airflow.providers.apache.hdfs.transfers'
+[2024-01-04T10:18:31.857+0530] {processor.py:841} WARNING - No viable dags retrieved from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:18:31.869+0530] {processor.py:179} INFO - Processing /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py took 0.027 seconds
+[2024-01-04T10:19:02.166+0530] {processor.py:157} INFO - Started process (PID=13918) to work on /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:19:02.168+0530] {processor.py:829} INFO - Processing file /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py for tasks to queue
+[2024-01-04T10:19:02.169+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:19:02.169+0530] {dagbag.py:536} INFO - Filling up the DagBag from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:19:02.172+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:19:02.171+0530] {dagbag.py:346} ERROR - Failed to import: /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+Traceback (most recent call last):
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py", line 5, in <module>
+    from airflow.providers.apache.hdfs.transfers.hdfs_to_local import HdfsToLocalFilesystem
+ModuleNotFoundError: No module named 'airflow.providers.apache.hdfs.transfers'
+[2024-01-04T10:19:02.172+0530] {processor.py:841} WARNING - No viable dags retrieved from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:19:02.187+0530] {processor.py:179} INFO - Processing /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py took 0.023 seconds
+[2024-01-04T10:19:14.121+0530] {processor.py:157} INFO - Started process (PID=14150) to work on /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:19:14.122+0530] {processor.py:829} INFO - Processing file /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py for tasks to queue
+[2024-01-04T10:19:14.123+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:19:14.122+0530] {dagbag.py:536} INFO - Filling up the DagBag from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:19:14.134+0530] {logging_mixin.py:154} WARNING - /home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-01-04T10:19:14.139+0530] {processor.py:839} INFO - DAG(s) dict_keys(['Cricbuzz_ETL']) retrieved from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:19:14.156+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:19:14.156+0530] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-04T10:19:14.171+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:19:14.171+0530] {dag.py:3722} INFO - Setting next_dagrun for Cricbuzz_ETL to 2024-01-04T00:00:00+00:00, run_after=2024-01-05T00:00:00+00:00
+[2024-01-04T10:19:14.193+0530] {processor.py:179} INFO - Processing /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py took 0.074 seconds
+[2024-01-04T10:19:44.319+0530] {processor.py:157} INFO - Started process (PID=14599) to work on /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:19:44.322+0530] {processor.py:829} INFO - Processing file /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py for tasks to queue
+[2024-01-04T10:19:44.323+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:19:44.323+0530] {dagbag.py:536} INFO - Filling up the DagBag from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:19:44.336+0530] {logging_mixin.py:154} WARNING - /home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-01-04T10:19:44.340+0530] {processor.py:839} INFO - DAG(s) dict_keys(['Cricbuzz_ETL']) retrieved from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:19:44.356+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:19:44.355+0530] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-04T10:19:44.369+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:19:44.369+0530] {dag.py:3722} INFO - Setting next_dagrun for Cricbuzz_ETL to 2024-01-04T00:00:00+00:00, run_after=2024-01-05T00:00:00+00:00
+[2024-01-04T10:19:44.383+0530] {processor.py:179} INFO - Processing /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py took 0.067 seconds
+[2024-01-04T10:20:14.512+0530] {processor.py:157} INFO - Started process (PID=15024) to work on /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:20:14.513+0530] {processor.py:829} INFO - Processing file /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py for tasks to queue
+[2024-01-04T10:20:14.514+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:20:14.514+0530] {dagbag.py:536} INFO - Filling up the DagBag from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:20:14.527+0530] {logging_mixin.py:154} WARNING - /home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-01-04T10:20:14.533+0530] {processor.py:839} INFO - DAG(s) dict_keys(['Cricbuzz_ETL']) retrieved from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:20:14.553+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:20:14.553+0530] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-04T10:20:14.569+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:20:14.569+0530] {dag.py:3722} INFO - Setting next_dagrun for Cricbuzz_ETL to 2024-01-04T00:00:00+00:00, run_after=2024-01-05T00:00:00+00:00
+[2024-01-04T10:20:14.585+0530] {processor.py:179} INFO - Processing /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py took 0.074 seconds
+[2024-01-04T10:20:44.717+0530] {processor.py:157} INFO - Started process (PID=15498) to work on /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:20:44.720+0530] {processor.py:829} INFO - Processing file /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py for tasks to queue
+[2024-01-04T10:20:44.721+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:20:44.721+0530] {dagbag.py:536} INFO - Filling up the DagBag from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:20:44.735+0530] {logging_mixin.py:154} WARNING - /home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-01-04T10:20:44.740+0530] {processor.py:839} INFO - DAG(s) dict_keys(['Cricbuzz_ETL']) retrieved from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:20:44.757+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:20:44.757+0530] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-04T10:20:44.771+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:20:44.771+0530] {dag.py:3722} INFO - Setting next_dagrun for Cricbuzz_ETL to 2024-01-04T00:00:00+00:00, run_after=2024-01-05T00:00:00+00:00
+[2024-01-04T10:20:44.786+0530] {processor.py:179} INFO - Processing /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py took 0.073 seconds
+[2024-01-04T10:21:14.906+0530] {processor.py:157} INFO - Started process (PID=15918) to work on /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:21:14.910+0530] {processor.py:829} INFO - Processing file /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py for tasks to queue
+[2024-01-04T10:21:14.911+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:21:14.910+0530] {dagbag.py:536} INFO - Filling up the DagBag from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:21:14.926+0530] {logging_mixin.py:154} WARNING - /home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-01-04T10:21:14.934+0530] {processor.py:839} INFO - DAG(s) dict_keys(['Cricbuzz_ETL']) retrieved from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:21:14.952+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:21:14.952+0530] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-04T10:21:14.969+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:21:14.968+0530] {dag.py:3722} INFO - Setting next_dagrun for Cricbuzz_ETL to 2024-01-04T00:00:00+00:00, run_after=2024-01-05T00:00:00+00:00
+[2024-01-04T10:21:14.986+0530] {processor.py:179} INFO - Processing /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py took 0.084 seconds
+[2024-01-04T10:21:45.078+0530] {processor.py:157} INFO - Started process (PID=16057) to work on /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:21:45.081+0530] {processor.py:829} INFO - Processing file /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py for tasks to queue
+[2024-01-04T10:21:45.083+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:21:45.082+0530] {dagbag.py:536} INFO - Filling up the DagBag from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:21:45.098+0530] {logging_mixin.py:154} WARNING - /home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-01-04T10:21:45.103+0530] {processor.py:839} INFO - DAG(s) dict_keys(['Cricbuzz_ETL']) retrieved from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:21:45.119+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:21:45.119+0530] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-04T10:21:45.135+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:21:45.135+0530] {dag.py:3722} INFO - Setting next_dagrun for Cricbuzz_ETL to 2024-01-04T00:00:00+00:00, run_after=2024-01-05T00:00:00+00:00
+[2024-01-04T10:21:45.150+0530] {processor.py:179} INFO - Processing /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py took 0.076 seconds
+[2024-01-04T10:22:15.253+0530] {processor.py:157} INFO - Started process (PID=16223) to work on /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:22:15.255+0530] {processor.py:829} INFO - Processing file /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py for tasks to queue
+[2024-01-04T10:22:15.256+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:22:15.256+0530] {dagbag.py:536} INFO - Filling up the DagBag from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:22:15.272+0530] {logging_mixin.py:154} WARNING - /home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-01-04T10:22:15.281+0530] {processor.py:839} INFO - DAG(s) dict_keys(['Cricbuzz_ETL']) retrieved from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:22:15.303+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:22:15.302+0530] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-04T10:22:15.319+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:22:15.319+0530] {dag.py:3722} INFO - Setting next_dagrun for Cricbuzz_ETL to 2024-01-04T00:00:00+00:00, run_after=2024-01-05T00:00:00+00:00
+[2024-01-04T10:22:15.339+0530] {processor.py:179} INFO - Processing /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py took 0.089 seconds
+[2024-01-04T10:22:17.996+0530] {processor.py:157} INFO - Started process (PID=16263) to work on /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:22:17.997+0530] {processor.py:829} INFO - Processing file /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py for tasks to queue
+[2024-01-04T10:22:17.998+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:22:17.997+0530] {dagbag.py:536} INFO - Filling up the DagBag from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:22:18.009+0530] {logging_mixin.py:154} WARNING - /home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-01-04T10:22:18.013+0530] {processor.py:839} INFO - DAG(s) dict_keys(['Cricbuzz_ETL']) retrieved from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:22:18.029+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:22:18.029+0530] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-04T10:22:18.043+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:22:18.042+0530] {dag.py:3722} INFO - Setting next_dagrun for Cricbuzz_ETL to 2024-01-04T00:00:00+00:00, run_after=2024-01-05T00:00:00+00:00
+[2024-01-04T10:22:18.060+0530] {processor.py:179} INFO - Processing /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py took 0.066 seconds
+[2024-01-04T10:22:48.864+0530] {processor.py:157} INFO - Started process (PID=16708) to work on /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:22:48.867+0530] {processor.py:829} INFO - Processing file /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py for tasks to queue
+[2024-01-04T10:22:48.868+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:22:48.867+0530] {dagbag.py:536} INFO - Filling up the DagBag from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:22:48.882+0530] {logging_mixin.py:154} WARNING - /home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-01-04T10:22:48.887+0530] {processor.py:839} INFO - DAG(s) dict_keys(['Cricbuzz_ETL']) retrieved from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:22:48.909+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:22:48.909+0530] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-04T10:22:48.926+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:22:48.926+0530] {dag.py:3722} INFO - Setting next_dagrun for Cricbuzz_ETL to 2024-01-04T00:00:00+00:00, run_after=2024-01-05T00:00:00+00:00
+[2024-01-04T10:22:48.951+0530] {processor.py:179} INFO - Processing /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py took 0.090 seconds
+[2024-01-04T10:23:10.127+0530] {processor.py:157} INFO - Started process (PID=16989) to work on /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:23:10.129+0530] {processor.py:829} INFO - Processing file /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py for tasks to queue
+[2024-01-04T10:23:10.130+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:23:10.129+0530] {dagbag.py:536} INFO - Filling up the DagBag from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:23:10.148+0530] {logging_mixin.py:154} WARNING - /home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-01-04T10:23:10.155+0530] {processor.py:839} INFO - DAG(s) dict_keys(['Cricbuzz_ETL']) retrieved from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:23:10.173+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:23:10.173+0530] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-04T10:23:10.198+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:23:10.198+0530] {dag.py:3722} INFO - Setting next_dagrun for Cricbuzz_ETL to 2024-01-04T00:00:00+00:00, run_after=2024-01-05T00:00:00+00:00
+[2024-01-04T10:23:10.221+0530] {processor.py:179} INFO - Processing /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py took 0.098 seconds
+[2024-01-04T10:23:40.784+0530] {processor.py:157} INFO - Started process (PID=17495) to work on /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:23:40.784+0530] {processor.py:829} INFO - Processing file /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py for tasks to queue
+[2024-01-04T10:23:40.785+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:23:40.785+0530] {dagbag.py:536} INFO - Filling up the DagBag from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:23:40.799+0530] {logging_mixin.py:154} WARNING - /home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-01-04T10:23:40.803+0530] {processor.py:839} INFO - DAG(s) dict_keys(['Cricbuzz_ETL']) retrieved from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:23:40.822+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:23:40.822+0530] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-04T10:23:40.839+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:23:40.839+0530] {dag.py:3722} INFO - Setting next_dagrun for Cricbuzz_ETL to 2024-01-04T00:00:00+00:00, run_after=2024-01-05T00:00:00+00:00
+[2024-01-04T10:23:40.856+0530] {processor.py:179} INFO - Processing /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py took 0.075 seconds
+[2024-01-04T10:24:11.162+0530] {processor.py:157} INFO - Started process (PID=17952) to work on /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:24:11.165+0530] {processor.py:829} INFO - Processing file /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py for tasks to queue
+[2024-01-04T10:24:11.167+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:24:11.166+0530] {dagbag.py:536} INFO - Filling up the DagBag from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:24:11.181+0530] {logging_mixin.py:154} WARNING - /home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-01-04T10:24:11.187+0530] {processor.py:839} INFO - DAG(s) dict_keys(['Cricbuzz_ETL']) retrieved from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:24:11.209+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:24:11.209+0530] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-04T10:24:11.227+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:24:11.227+0530] {dag.py:3722} INFO - Setting next_dagrun for Cricbuzz_ETL to 2024-01-04T00:00:00+00:00, run_after=2024-01-05T00:00:00+00:00
+[2024-01-04T10:24:11.246+0530] {processor.py:179} INFO - Processing /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py took 0.088 seconds
+[2024-01-04T10:24:41.499+0530] {processor.py:157} INFO - Started process (PID=18549) to work on /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:24:41.502+0530] {processor.py:829} INFO - Processing file /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py for tasks to queue
+[2024-01-04T10:24:41.503+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:24:41.502+0530] {dagbag.py:536} INFO - Filling up the DagBag from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:24:41.517+0530] {logging_mixin.py:154} WARNING - /home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-01-04T10:24:41.521+0530] {processor.py:839} INFO - DAG(s) dict_keys(['Cricbuzz_ETL']) retrieved from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:24:41.537+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:24:41.537+0530] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-04T10:24:41.551+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:24:41.551+0530] {dag.py:3722} INFO - Setting next_dagrun for Cricbuzz_ETL to 2024-01-04T00:00:00+00:00, run_after=2024-01-05T00:00:00+00:00
+[2024-01-04T10:24:41.567+0530] {processor.py:179} INFO - Processing /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py took 0.069 seconds
+[2024-01-04T10:25:11.848+0530] {processor.py:157} INFO - Started process (PID=19019) to work on /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:25:11.851+0530] {processor.py:829} INFO - Processing file /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py for tasks to queue
+[2024-01-04T10:25:11.852+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:25:11.852+0530] {dagbag.py:536} INFO - Filling up the DagBag from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:25:11.866+0530] {logging_mixin.py:154} WARNING - /home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-01-04T10:25:11.872+0530] {processor.py:839} INFO - DAG(s) dict_keys(['Cricbuzz_ETL']) retrieved from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:25:11.892+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:25:11.892+0530] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-04T10:25:11.913+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:25:11.913+0530] {dag.py:3722} INFO - Setting next_dagrun for Cricbuzz_ETL to 2024-01-04T00:00:00+00:00, run_after=2024-01-05T00:00:00+00:00
+[2024-01-04T10:25:11.939+0530] {processor.py:179} INFO - Processing /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py took 0.096 seconds
+[2024-01-04T10:25:42.944+0530] {processor.py:157} INFO - Started process (PID=19504) to work on /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:25:42.947+0530] {processor.py:829} INFO - Processing file /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py for tasks to queue
+[2024-01-04T10:25:42.949+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:25:42.948+0530] {dagbag.py:536} INFO - Filling up the DagBag from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:25:42.963+0530] {logging_mixin.py:154} WARNING - /home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-01-04T10:25:42.968+0530] {processor.py:839} INFO - DAG(s) dict_keys(['Cricbuzz_ETL']) retrieved from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T10:25:42.986+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:25:42.986+0530] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-04T10:25:43.004+0530] {logging_mixin.py:154} INFO - [2024-01-04T10:25:43.004+0530] {dag.py:3722} INFO - Setting next_dagrun for Cricbuzz_ETL to 2024-01-04T00:00:00+00:00, run_after=2024-01-05T00:00:00+00:00
+[2024-01-04T10:25:43.024+0530] {processor.py:179} INFO - Processing /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py took 0.084 seconds
+[2024-01-04T19:12:06.084+0530] {processor.py:157} INFO - Started process (PID=76625) to work on /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T19:12:06.085+0530] {processor.py:829} INFO - Processing file /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py for tasks to queue
+[2024-01-04T19:12:06.086+0530] {logging_mixin.py:154} INFO - [2024-01-04T19:12:06.086+0530] {dagbag.py:536} INFO - Filling up the DagBag from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T19:12:06.102+0530] {logging_mixin.py:154} WARNING - /home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-01-04T19:12:06.109+0530] {processor.py:839} INFO - DAG(s) dict_keys(['Cricbuzz_ETL']) retrieved from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T19:12:06.117+0530] {logging_mixin.py:154} INFO - [2024-01-04T19:12:06.117+0530] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-04T19:12:06.140+0530] {logging_mixin.py:154} INFO - [2024-01-04T19:12:06.139+0530] {dag.py:3722} INFO - Setting next_dagrun for Cricbuzz_ETL to 2024-01-04T00:00:00+00:00, run_after=2024-01-05T00:00:00+00:00
+[2024-01-04T19:12:06.161+0530] {processor.py:179} INFO - Processing /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py took 0.079 seconds
+[2024-01-04T19:12:36.223+0530] {processor.py:157} INFO - Started process (PID=77029) to work on /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T19:12:36.225+0530] {processor.py:829} INFO - Processing file /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py for tasks to queue
+[2024-01-04T19:12:36.227+0530] {logging_mixin.py:154} INFO - [2024-01-04T19:12:36.226+0530] {dagbag.py:536} INFO - Filling up the DagBag from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T19:12:36.240+0530] {logging_mixin.py:154} WARNING - /home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-01-04T19:12:36.245+0530] {processor.py:839} INFO - DAG(s) dict_keys(['Cricbuzz_ETL']) retrieved from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T19:12:36.261+0530] {logging_mixin.py:154} INFO - [2024-01-04T19:12:36.261+0530] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-04T19:12:36.275+0530] {logging_mixin.py:154} INFO - [2024-01-04T19:12:36.274+0530] {dag.py:3722} INFO - Setting next_dagrun for Cricbuzz_ETL to 2024-01-04T00:00:00+00:00, run_after=2024-01-05T00:00:00+00:00
+[2024-01-04T19:12:36.289+0530] {processor.py:179} INFO - Processing /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py took 0.069 seconds
+[2024-01-04T19:13:06.585+0530] {processor.py:157} INFO - Started process (PID=77087) to work on /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T19:13:06.588+0530] {processor.py:829} INFO - Processing file /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py for tasks to queue
+[2024-01-04T19:13:06.589+0530] {logging_mixin.py:154} INFO - [2024-01-04T19:13:06.589+0530] {dagbag.py:536} INFO - Filling up the DagBag from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T19:13:06.602+0530] {logging_mixin.py:154} WARNING - /home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-01-04T19:13:06.607+0530] {processor.py:839} INFO - DAG(s) dict_keys(['Cricbuzz_ETL']) retrieved from /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py
+[2024-01-04T19:13:06.625+0530] {logging_mixin.py:154} INFO - [2024-01-04T19:13:06.625+0530] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-04T19:13:06.641+0530] {logging_mixin.py:154} INFO - [2024-01-04T19:13:06.641+0530] {dag.py:3722} INFO - Setting next_dagrun for Cricbuzz_ETL to 2024-01-04T00:00:00+00:00, run_after=2024-01-05T00:00:00+00:00
+[2024-01-04T19:13:06.659+0530] {processor.py:179} INFO - Processing /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py took 0.078 seconds

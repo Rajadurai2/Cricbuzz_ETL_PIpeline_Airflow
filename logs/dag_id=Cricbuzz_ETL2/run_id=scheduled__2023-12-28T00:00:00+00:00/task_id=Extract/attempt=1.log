@@ -1,0 +1,20 @@
+[2023-12-31T21:06:08.033+0530] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Cricbuzz_ETL2.Extract scheduled__2023-12-28T00:00:00+00:00 [queued]>
+[2023-12-31T21:06:08.039+0530] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Cricbuzz_ETL2.Extract scheduled__2023-12-28T00:00:00+00:00 [queued]>
+[2023-12-31T21:06:08.040+0530] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-12-31T21:06:08.053+0530] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): Extract> on 2023-12-28 00:00:00+00:00
+[2023-12-31T21:06:08.055+0530] {standard_task_runner.py:57} INFO - Started process 19217 to run task
+[2023-12-31T21:06:08.059+0530] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'Cricbuzz_ETL2', 'Extract', 'scheduled__2023-12-28T00:00:00+00:00', '--job-id', '432', '--raw', '--subdir', 'DAGS_FOLDER/summa.py', '--cfg-path', '/tmp/tmppoqvhtx_']
+[2023-12-31T21:06:08.060+0530] {standard_task_runner.py:85} INFO - Job 432: Subtask Extract
+[2023-12-31T21:06:08.091+0530] {task_command.py:416} INFO - Running <TaskInstance: Cricbuzz_ETL2.Extract scheduled__2023-12-28T00:00:00+00:00 [running]> on host Iris
+[2023-12-31T21:06:08.140+0530] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='Cricbuzz_ETL2' AIRFLOW_CTX_TASK_ID='Extract' AIRFLOW_CTX_EXECUTION_DATE='2023-12-28T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-12-28T00:00:00+00:00'
+[2023-12-31T21:06:08.142+0530] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+TypeError: web_scrap() takes 1 positional argument but 2 were given
+[2023-12-31T21:06:08.145+0530] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=Cricbuzz_ETL2, task_id=Extract, execution_date=20231228T000000, start_date=20231231T153608, end_date=20231231T153608
+[2023-12-31T21:06:08.153+0530] {standard_task_runner.py:104} ERROR - Failed to execute job 432 for task Extract (web_scrap() takes 1 positional argument but 2 were given; 19217)
+[2023-12-31T21:06:08.190+0530] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-12-31T21:06:08.214+0530] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

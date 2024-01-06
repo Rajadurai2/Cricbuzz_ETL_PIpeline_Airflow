@@ -1,0 +1,17 @@
+[2023-12-31T21:58:34.095+0530] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: trigger.skip_task manual__2023-12-31T16:28:29.113573+00:00 [queued]>
+[2023-12-31T21:58:34.103+0530] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: trigger.skip_task manual__2023-12-31T16:28:29.113573+00:00 [queued]>
+[2023-12-31T21:58:34.103+0530] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-12-31T21:58:34.120+0530] {taskinstance.py:1382} INFO - Executing <Task(BashOperator): skip_task> on 2023-12-31 16:28:29.113573+00:00
+[2023-12-31T21:58:34.124+0530] {standard_task_runner.py:57} INFO - Started process 37869 to run task
+[2023-12-31T21:58:34.128+0530] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'trigger', 'skip_task', 'manual__2023-12-31T16:28:29.113573+00:00', '--job-id', '517', '--raw', '--subdir', 'DAGS_FOLDER/summa.py', '--cfg-path', '/tmp/tmpw8d70bf2']
+[2023-12-31T21:58:34.129+0530] {standard_task_runner.py:85} INFO - Job 517: Subtask skip_task
+[2023-12-31T21:58:34.162+0530] {task_command.py:416} INFO - Running <TaskInstance: trigger.skip_task manual__2023-12-31T16:28:29.113573+00:00 [running]> on host Iris
+[2023-12-31T21:58:34.230+0530] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='trigger' AIRFLOW_CTX_TASK_ID='skip_task' AIRFLOW_CTX_EXECUTION_DATE='2023-12-31T16:28:29.113573+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-12-31T16:28:29.113573+00:00'
+[2023-12-31T21:58:34.231+0530] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2023-12-31T21:58:34.232+0530] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'echo "skipped task"']
+[2023-12-31T21:58:34.239+0530] {subprocess.py:86} INFO - Output:
+[2023-12-31T21:58:34.240+0530] {subprocess.py:93} INFO - skipped task
+[2023-12-31T21:58:34.241+0530] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-12-31T21:58:34.259+0530] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=trigger, task_id=skip_task, execution_date=20231231T162829, start_date=20231231T162834, end_date=20231231T162834
+[2023-12-31T21:58:34.299+0530] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-31T21:58:34.317+0530] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

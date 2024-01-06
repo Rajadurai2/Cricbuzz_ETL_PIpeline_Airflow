@@ -1,0 +1,50 @@
+[2024-01-02T23:27:47.535+0530] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: summa1.copy_files_to_hadoop manual__2024-01-02T17:57:44.906353+00:00 [queued]>
+[2024-01-02T23:27:47.542+0530] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: summa1.copy_files_to_hadoop manual__2024-01-02T17:57:44.906353+00:00 [queued]>
+[2024-01-02T23:27:47.543+0530] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2024-01-02T23:27:47.565+0530] {taskinstance.py:1382} INFO - Executing <Task(BashOperator): copy_files_to_hadoop> on 2024-01-02 17:57:44.906353+00:00
+[2024-01-02T23:27:47.569+0530] {standard_task_runner.py:57} INFO - Started process 58678 to run task
+[2024-01-02T23:27:47.573+0530] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'summa1', 'copy_files_to_hadoop', 'manual__2024-01-02T17:57:44.906353+00:00', '--job-id', '655', '--raw', '--subdir', 'DAGS_FOLDER/summa.py', '--cfg-path', '/tmp/tmph100iyua']
+[2024-01-02T23:27:47.574+0530] {standard_task_runner.py:85} INFO - Job 655: Subtask copy_files_to_hadoop
+[2024-01-02T23:27:47.616+0530] {task_command.py:416} INFO - Running <TaskInstance: summa1.copy_files_to_hadoop manual__2024-01-02T17:57:44.906353+00:00 [running]> on host Iris
+[2024-01-02T23:27:47.650+0530] {abstractoperator.py:709} ERROR - Exception rendering Jinja template for task 'copy_files_to_hadoop', field 'bash_command'. Template: "bash '{{ ./summa.sh }}'"
+Traceback (most recent call last):
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/models/abstractoperator.py", line 701, in _do_render_template_fields
+    rendered_content = self.render_template(
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/template/templater.py", line 154, in render_template
+    template = jinja_env.from_string(value)
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/jinja2/environment.py", line 1105, in from_string
+    return cls.from_code(self, self.compile(source), gs, None)
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/jinja2/environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "<unknown>", line 1, in template
+jinja2.exceptions.TemplateSyntaxError: unexpected '.'
+[2024-01-02T23:27:47.652+0530] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1518, in _run_raw_task
+    self._execute_task_with_callbacks(context, test_mode, session=session)
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1647, in _execute_task_with_callbacks
+    task_orig = self.render_templates(context=context)
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 2285, in render_templates
+    original_task.render_template_fields(context)
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 1243, in render_template_fields
+    self._do_render_template_fields(self, self.template_fields, context, jinja_env, set())
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/utils/session.py", line 79, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/models/abstractoperator.py", line 701, in _do_render_template_fields
+    rendered_content = self.render_template(
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/template/templater.py", line 154, in render_template
+    template = jinja_env.from_string(value)
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/jinja2/environment.py", line 1105, in from_string
+    return cls.from_code(self, self.compile(source), gs, None)
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/jinja2/environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "<unknown>", line 1, in template
+jinja2.exceptions.TemplateSyntaxError: unexpected '.'
+[2024-01-02T23:27:47.656+0530] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=summa1, task_id=copy_files_to_hadoop, execution_date=20240102T175744, start_date=20240102T175747, end_date=20240102T175747
+[2024-01-02T23:27:47.666+0530] {standard_task_runner.py:104} ERROR - Failed to execute job 655 for task copy_files_to_hadoop (unexpected '.'; 58678)
+[2024-01-02T23:27:47.705+0530] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-01-02T23:27:47.721+0530] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

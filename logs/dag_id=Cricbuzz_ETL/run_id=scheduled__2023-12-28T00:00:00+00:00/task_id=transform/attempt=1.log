@@ -1,0 +1,56 @@
+[2024-01-02T17:20:30.572+0530] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Cricbuzz_ETL.transform scheduled__2023-12-28T00:00:00+00:00 [queued]>
+[2024-01-02T17:20:30.579+0530] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Cricbuzz_ETL.transform scheduled__2023-12-28T00:00:00+00:00 [queued]>
+[2024-01-02T17:20:30.579+0530] {taskinstance.py:1361} INFO - Starting attempt 1 of 0
+[2024-01-02T17:20:30.591+0530] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): transform> on 2023-12-28 00:00:00+00:00
+[2024-01-02T17:20:30.593+0530] {standard_task_runner.py:57} INFO - Started process 11542 to run task
+[2024-01-02T17:20:30.596+0530] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'Cricbuzz_ETL', 'transform', 'scheduled__2023-12-28T00:00:00+00:00', '--job-id', '532', '--raw', '--subdir', 'DAGS_FOLDER/Crickbuzz_dag.py', '--cfg-path', '/tmp/tmpmq16jodc']
+[2024-01-02T17:20:30.597+0530] {standard_task_runner.py:85} INFO - Job 532: Subtask transform
+[2024-01-02T17:20:30.628+0530] {task_command.py:416} INFO - Running <TaskInstance: Cricbuzz_ETL.transform scheduled__2023-12-28T00:00:00+00:00 [running]> on host Iris
+[2024-01-02T17:20:30.677+0530] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='Cricbuzz_ETL' AIRFLOW_CTX_TASK_ID='transform' AIRFLOW_CTX_EXECUTION_DATE='2023-12-28T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-12-28T00:00:00+00:00'
+[2024-01-02T17:20:31.242+0530] {logging_mixin.py:154} INFO - AUS IND
+[2024-01-02T17:20:31.242+0530] {logging_mixin.py:154} INFO - hi
+[2024-01-02T17:20:31.245+0530] {logging_mixin.py:154} INFO - bat
+[2024-01-02T17:20:33.244+0530] {logging_mixin.py:154} INFO - https://www.cricbuzz.com/cricket-scores/75437/ind-vs-aus-5th-match-icc-cricket-world-cup-2023
+[2024-01-02T17:20:34.628+0530] {python.py:194} INFO - Done. Returned value was: None
+[2024-01-02T17:20:34.633+0530] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=Cricbuzz_ETL, task_id=transform, execution_date=20231228T000000, start_date=20240102T115030, end_date=20240102T115034
+[2024-01-02T17:20:34.661+0530] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2024-01-02T17:20:34.682+0530] {taskinstance.py:2778} INFO - 2 downstream tasks scheduled from follow-on schedule check
+[2024-01-02T17:26:25.846+0530] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Cricbuzz_ETL.transform scheduled__2023-12-28T00:00:00+00:00 [queued]>
+[2024-01-02T17:26:25.850+0530] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Cricbuzz_ETL.transform scheduled__2023-12-28T00:00:00+00:00 [queued]>
+[2024-01-02T17:26:25.851+0530] {taskinstance.py:1361} INFO - Starting attempt 1 of 0
+[2024-01-02T17:26:25.865+0530] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): transform> on 2023-12-28 00:00:00+00:00
+[2024-01-02T17:26:25.867+0530] {standard_task_runner.py:57} INFO - Started process 14503 to run task
+[2024-01-02T17:26:25.870+0530] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'Cricbuzz_ETL', 'transform', 'scheduled__2023-12-28T00:00:00+00:00', '--job-id', '536', '--raw', '--subdir', 'DAGS_FOLDER/Crickbuzz_dag.py', '--cfg-path', '/tmp/tmphu5124ds']
+[2024-01-02T17:26:25.871+0530] {standard_task_runner.py:85} INFO - Job 536: Subtask transform
+[2024-01-02T17:26:25.900+0530] {task_command.py:416} INFO - Running <TaskInstance: Cricbuzz_ETL.transform scheduled__2023-12-28T00:00:00+00:00 [running]> on host Iris
+[2024-01-02T17:26:25.955+0530] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='Cricbuzz_ETL' AIRFLOW_CTX_TASK_ID='transform' AIRFLOW_CTX_EXECUTION_DATE='2023-12-28T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-12-28T00:00:00+00:00'
+[2024-01-02T17:26:26.310+0530] {logging_mixin.py:154} INFO - AUS IND
+[2024-01-02T17:26:26.310+0530] {logging_mixin.py:154} INFO - hi
+[2024-01-02T17:26:26.312+0530] {logging_mixin.py:154} INFO - bat
+[2024-01-02T17:26:28.220+0530] {logging_mixin.py:154} INFO - https://www.cricbuzz.com/cricket-scores/75437/ind-vs-aus-5th-match-icc-cricket-world-cup-2023
+[2024-01-02T17:26:28.787+0530] {python.py:194} INFO - Done. Returned value was: None
+[2024-01-02T17:26:28.793+0530] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=Cricbuzz_ETL, task_id=transform, execution_date=20231228T000000, start_date=20240102T115625, end_date=20240102T115628
+[2024-01-02T17:26:28.813+0530] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2024-01-02T17:26:28.831+0530] {taskinstance.py:2778} INFO - 2 downstream tasks scheduled from follow-on schedule check
+[2024-01-02T17:55:03.125+0530] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Cricbuzz_ETL.transform scheduled__2023-12-28T00:00:00+00:00 [queued]>
+[2024-01-02T17:55:03.131+0530] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Cricbuzz_ETL.transform scheduled__2023-12-28T00:00:00+00:00 [queued]>
+[2024-01-02T17:55:03.131+0530] {taskinstance.py:1361} INFO - Starting attempt 1 of 0
+[2024-01-02T17:55:03.142+0530] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): transform> on 2023-12-28 00:00:00+00:00
+[2024-01-02T17:55:03.145+0530] {standard_task_runner.py:57} INFO - Started process 24956 to run task
+[2024-01-02T17:55:03.148+0530] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'Cricbuzz_ETL', 'transform', 'scheduled__2023-12-28T00:00:00+00:00', '--job-id', '543', '--raw', '--subdir', 'DAGS_FOLDER/Crickbuzz_dag.py', '--cfg-path', '/tmp/tmpl01cgkij']
+[2024-01-02T17:55:03.149+0530] {standard_task_runner.py:85} INFO - Job 543: Subtask transform
+[2024-01-02T17:55:03.183+0530] {task_command.py:416} INFO - Running <TaskInstance: Cricbuzz_ETL.transform scheduled__2023-12-28T00:00:00+00:00 [running]> on host Iris
+[2024-01-02T17:55:03.250+0530] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='Cricbuzz_ETL' AIRFLOW_CTX_TASK_ID='transform' AIRFLOW_CTX_EXECUTION_DATE='2023-12-28T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-12-28T00:00:00+00:00'
+[2024-01-02T17:55:03.251+0530] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/rajabala/Desktop/projects/Airflow/dags/Cricbuzz_files/Transform.py", line 3, in clean
+    file_name=url.split('/')[-1]
+AttributeError: 'list' object has no attribute 'split'
+[2024-01-02T17:55:03.255+0530] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=Cricbuzz_ETL, task_id=transform, execution_date=20231228T000000, start_date=20240102T122503, end_date=20240102T122503
+[2024-01-02T17:55:03.270+0530] {standard_task_runner.py:104} ERROR - Failed to execute job 543 for task transform ('list' object has no attribute 'split'; 24956)
+[2024-01-02T17:55:03.279+0530] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-01-02T17:55:03.294+0530] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

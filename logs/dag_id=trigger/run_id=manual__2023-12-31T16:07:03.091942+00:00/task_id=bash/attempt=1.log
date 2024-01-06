@@ -1,0 +1,23 @@
+[2023-12-31T21:37:23.902+0530] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: trigger.bash manual__2023-12-31T16:07:03.091942+00:00 [queued]>
+[2023-12-31T21:37:23.910+0530] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: trigger.bash manual__2023-12-31T16:07:03.091942+00:00 [queued]>
+[2023-12-31T21:37:23.910+0530] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-12-31T21:37:23.925+0530] {taskinstance.py:1382} INFO - Executing <Task(BashOperator): bash> on 2023-12-31 16:07:03.091942+00:00
+[2023-12-31T21:37:23.929+0530] {standard_task_runner.py:57} INFO - Started process 26260 to run task
+[2023-12-31T21:37:23.932+0530] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'trigger', 'bash', 'manual__2023-12-31T16:07:03.091942+00:00', '--job-id', '490', '--raw', '--subdir', 'DAGS_FOLDER/summa.py', '--cfg-path', '/tmp/tmpsf4ocgb_']
+[2023-12-31T21:37:23.933+0530] {standard_task_runner.py:85} INFO - Job 490: Subtask bash
+[2023-12-31T21:37:23.960+0530] {task_command.py:416} INFO - Running <TaskInstance: trigger.bash manual__2023-12-31T16:07:03.091942+00:00 [running]> on host Iris
+[2023-12-31T21:37:24.006+0530] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='trigger' AIRFLOW_CTX_TASK_ID='bash' AIRFLOW_CTX_EXECUTION_DATE='2023-12-31T16:07:03.091942+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-12-31T16:07:03.091942+00:00'
+[2023-12-31T21:37:24.007+0530] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2023-12-31T21:37:24.007+0530] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'execution_date =2023-12-31']
+[2023-12-31T21:37:24.015+0530] {subprocess.py:86} INFO - Output:
+[2023-12-31T21:37:24.015+0530] {subprocess.py:93} INFO - /usr/bin/bash: line 1: execution_date: command not found
+[2023-12-31T21:37:24.016+0530] {subprocess.py:97} INFO - Command exited with return code 127
+[2023-12-31T21:37:24.022+0530] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/operators/bash.py", line 210, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 127.
+[2023-12-31T21:37:24.025+0530] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=trigger, task_id=bash, execution_date=20231231T160703, start_date=20231231T160723, end_date=20231231T160724
+[2023-12-31T21:37:24.037+0530] {standard_task_runner.py:104} ERROR - Failed to execute job 490 for task bash (Bash command failed. The command returned a non-zero exit code 127.; 26260)
+[2023-12-31T21:37:24.064+0530] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-12-31T21:37:24.083+0530] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

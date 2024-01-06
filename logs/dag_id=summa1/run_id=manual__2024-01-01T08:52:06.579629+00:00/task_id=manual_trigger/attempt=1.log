@@ -1,0 +1,20 @@
+[2024-01-01T14:22:08.310+0530] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: summa1.manual_trigger manual__2024-01-01T08:52:06.579629+00:00 [queued]>
+[2024-01-01T14:22:08.313+0530] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: summa1.manual_trigger manual__2024-01-01T08:52:06.579629+00:00 [queued]>
+[2024-01-01T14:22:08.313+0530] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2024-01-01T14:22:08.324+0530] {taskinstance.py:1382} INFO - Executing <Task(TriggerDagRunOperator): manual_trigger> on 2024-01-01 08:52:06.579629+00:00
+[2024-01-01T14:22:08.325+0530] {standard_task_runner.py:57} INFO - Started process 12237 to run task
+[2024-01-01T14:22:08.328+0530] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'summa1', 'manual_trigger', 'manual__2024-01-01T08:52:06.579629+00:00', '--job-id', '505', '--raw', '--subdir', 'DAGS_FOLDER/summa.py', '--cfg-path', '/tmp/tmp65sbo99l']
+[2024-01-01T14:22:08.328+0530] {standard_task_runner.py:85} INFO - Job 505: Subtask manual_trigger
+[2024-01-01T14:22:08.364+0530] {task_command.py:416} INFO - Running <TaskInstance: summa1.manual_trigger manual__2024-01-01T08:52:06.579629+00:00 [running]> on host Iris
+[2024-01-01T14:22:08.420+0530] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='your_username' AIRFLOW_CTX_DAG_ID='summa1' AIRFLOW_CTX_TASK_ID='manual_trigger' AIRFLOW_CTX_EXECUTION_DATE='2024-01-01T08:52:06.579629+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-01-01T08:52:06.579629+00:00'
+[2024-01-01T14:22:08.425+0530] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/operators/trigger_dagrun.py", line 163, in execute
+    dag_run = trigger_dag(
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/api/common/trigger_dag.py", line 119, in trigger_dag
+    raise DagNotFound(f"Dag id {dag_id} not found in DagModel")
+airflow.exceptions.DagNotFound: Dag id your_dag_id not found in DagModel
+[2024-01-01T14:22:08.426+0530] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=summa1, task_id=manual_trigger, execution_date=20240101T085206, start_date=20240101T085208, end_date=20240101T085208
+[2024-01-01T14:22:08.434+0530] {standard_task_runner.py:104} ERROR - Failed to execute job 505 for task manual_trigger (Dag id your_dag_id not found in DagModel; 12237)
+[2024-01-01T14:22:08.459+0530] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-01-01T14:22:08.477+0530] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

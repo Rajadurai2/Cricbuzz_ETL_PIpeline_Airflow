@@ -1,0 +1,22 @@
+[2024-01-04T10:25:25.659+0530] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Cricbuzz_ETL.load_to_postgres manual__2024-01-04T04:55:18.546006+00:00 [queued]>
+[2024-01-04T10:25:25.668+0530] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Cricbuzz_ETL.load_to_postgres manual__2024-01-04T04:55:18.546006+00:00 [queued]>
+[2024-01-04T10:25:25.668+0530] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2024-01-04T10:25:25.681+0530] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): load_to_postgres> on 2024-01-04 04:55:18.546006+00:00
+[2024-01-04T10:25:25.684+0530] {standard_task_runner.py:57} INFO - Started process 19296 to run task
+[2024-01-04T10:25:25.687+0530] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'Cricbuzz_ETL', 'load_to_postgres', 'manual__2024-01-04T04:55:18.546006+00:00', '--job-id', '743', '--raw', '--subdir', 'DAGS_FOLDER/Crickbuzz_dag.py', '--cfg-path', '/tmp/tmp0jcw_hay']
+[2024-01-04T10:25:25.688+0530] {standard_task_runner.py:85} INFO - Job 743: Subtask load_to_postgres
+[2024-01-04T10:25:25.718+0530] {task_command.py:416} INFO - Running <TaskInstance: Cricbuzz_ETL.load_to_postgres manual__2024-01-04T04:55:18.546006+00:00 [running]> on host Iris
+[2024-01-04T10:25:25.773+0530] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='Cricbuzz_ETL' AIRFLOW_CTX_TASK_ID='load_to_postgres' AIRFLOW_CTX_EXECUTION_DATE='2024-01-04T04:55:18.546006+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-01-04T04:55:18.546006+00:00'
+[2024-01-04T10:25:26.107+0530] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/rajabala/Desktop/projects/Airflow/dags/Cricbuzz_files/Load.py", line 9, in load_to_db
+    file_name=url.split('/')[-1]
+AttributeError: 'list' object has no attribute 'split'
+[2024-01-04T10:25:26.110+0530] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=Cricbuzz_ETL, task_id=load_to_postgres, execution_date=20240104T045518, start_date=20240104T045525, end_date=20240104T045526
+[2024-01-04T10:25:26.123+0530] {standard_task_runner.py:104} ERROR - Failed to execute job 743 for task load_to_postgres ('list' object has no attribute 'split'; 19296)
+[2024-01-04T10:25:26.140+0530] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-01-04T10:25:26.157+0530] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check

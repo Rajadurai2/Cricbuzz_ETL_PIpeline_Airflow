@@ -1,0 +1,9 @@
+apache-airflow==2.7.3
+beautifulsoup4==4.9.3
+chromedriver_autoinstaller==0.6.2
+pandas==1.4.2
+pendulum==2.1.2
+Requests==2.31.0
+selenium==4.16.0
+apache-airflow-providers-apache-hdfs==2.1.0
+hdfs==2.7.3

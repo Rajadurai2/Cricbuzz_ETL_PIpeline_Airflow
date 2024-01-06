@@ -1,0 +1,86 @@
+[2023-12-31T21:08:31.272+0530] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Cricbuzz_ETL.Extract scheduled__2023-12-28T00:00:00+00:00 [queued]>
+[2023-12-31T21:08:31.277+0530] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Cricbuzz_ETL.Extract scheduled__2023-12-28T00:00:00+00:00 [queued]>
+[2023-12-31T21:08:31.277+0530] {taskinstance.py:1361} INFO - Starting attempt 2 of 2
+[2023-12-31T21:08:31.289+0530] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): Extract> on 2023-12-28 00:00:00+00:00
+[2023-12-31T21:08:31.291+0530] {standard_task_runner.py:57} INFO - Started process 21037 to run task
+[2023-12-31T21:08:31.293+0530] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'Cricbuzz_ETL', 'Extract', 'scheduled__2023-12-28T00:00:00+00:00', '--job-id', '470', '--raw', '--subdir', 'DAGS_FOLDER/Crickbuzz_dag.py', '--cfg-path', '/tmp/tmp51enx6o1']
+[2023-12-31T21:08:31.294+0530] {standard_task_runner.py:85} INFO - Job 470: Subtask Extract
+[2023-12-31T21:08:31.325+0530] {task_command.py:416} INFO - Running <TaskInstance: Cricbuzz_ETL.Extract scheduled__2023-12-28T00:00:00+00:00 [running]> on host Iris
+[2023-12-31T21:08:31.370+0530] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='Cricbuzz_ETL' AIRFLOW_CTX_TASK_ID='Extract' AIRFLOW_CTX_EXECUTION_DATE='2023-12-28T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-12-28T00:00:00+00:00'
+[2023-12-31T21:08:31.374+0530] {logging_mixin.py:154} INFO - ['https://www.cricbuzz.com/cricket-full-commentary/66169/gt-vs-csk-1st-match-indian-premier-league-2023']
+[2023-12-31T21:08:31.745+0530] {connectionpool.py:871} WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ff76dbc9430>: Failed to establish a new connection: [Errno 111] Connection refused')': /wd/hub/session
+[2023-12-31T21:08:31.745+0530] {connectionpool.py:871} WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ff76dbc9760>: Failed to establish a new connection: [Errno 111] Connection refused')': /wd/hub/session
+[2023-12-31T21:08:31.746+0530] {connectionpool.py:871} WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ff76dbc9b50>: Failed to establish a new connection: [Errno 111] Connection refused')': /wd/hub/session
+[2023-12-31T21:08:31.747+0530] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/urllib3/connection.py", line 203, in _new_conn
+    sock = connection.create_connection(
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/urllib3/connectionpool.py", line 790, in urlopen
+    response = self._make_request(
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/urllib3/connectionpool.py", line 496, in _make_request
+    conn.request(
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/urllib3/connection.py", line 395, in request
+    self.endheaders()
+  File "/home/rajabala/anaconda3/lib/python3.9/http/client.py", line 1280, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/home/rajabala/anaconda3/lib/python3.9/http/client.py", line 1040, in _send_output
+    self.send(msg)
+  File "/home/rajabala/anaconda3/lib/python3.9/http/client.py", line 980, in send
+    self.connect()
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/urllib3/connection.py", line 243, in connect
+    self.sock = self._new_conn()
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/urllib3/connection.py", line 218, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7ff76dbc9d30>: Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/rajabala/Desktop/projects/Airflow/dags/Cricbuzz_files/Extract.py", line 32, in web_scrap
+    driver = webdriver.Remote(command_executor=selenium_url, options=chrome_options)
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 209, in __init__
+    self.start_session(capabilities)
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 293, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 346, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 300, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 321, in _request
+    response = self._conn.request(method, url, body=body, headers=headers)
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/urllib3/_request_methods.py", line 118, in request
+    return self.request_encode_body(
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/urllib3/_request_methods.py", line 217, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/urllib3/poolmanager.py", line 444, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/urllib3/connectionpool.py", line 874, in urlopen
+    return self.urlopen(
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/urllib3/connectionpool.py", line 874, in urlopen
+    return self.urlopen(
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/urllib3/connectionpool.py", line 874, in urlopen
+    return self.urlopen(
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/urllib3/connectionpool.py", line 844, in urlopen
+    retries = retries.increment(
+  File "/home/rajabala/Desktop/projects/Airflow/airflow_env/lib/python3.9/site-packages/urllib3/util/retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=5555): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ff76dbc9d30>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[2023-12-31T21:08:31.752+0530] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=Cricbuzz_ETL, task_id=Extract, execution_date=20231228T000000, start_date=20231231T153831, end_date=20231231T153831
+[2023-12-31T21:08:31.765+0530] {standard_task_runner.py:104} ERROR - Failed to execute job 470 for task Extract (HTTPConnectionPool(host='localhost', port=5555): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ff76dbc9d30>: Failed to establish a new connection: [Errno 111] Connection refused')); 21037)
+[2023-12-31T21:08:31.786+0530] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-12-31T21:08:31.805+0530] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-01-02T17:46:06.808+0530] {taskinstance.py:1149} INFO - Dependencies not met for <TaskInstance: Cricbuzz_ETL.Extract scheduled__2023-12-28T00:00:00+00:00 [up_for_retry]>, dependency 'Not In Retry Period' FAILED: Task is not ready for retry yet but will be retried automatically. Current date is 2024-01-02T12:16:06.808439+00:00 and task will be retried at 2024-01-02T12:16:22.520102+00:00.
+[2024-01-02T17:46:06.809+0530] {local_task_job_runner.py:154} INFO - Task is not able to be run
