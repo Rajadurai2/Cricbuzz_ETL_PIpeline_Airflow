@@ -249,7 +249,7 @@ def web_scrap(url):
 
 
 
-def Scrap_multiple_sites(url,**kwargs):
+def Scrap_multiple_sites(**kwargs):
     ti = kwargs['ti']
     execution_date = kwargs['ds']
     # Retrieve the result from XCom

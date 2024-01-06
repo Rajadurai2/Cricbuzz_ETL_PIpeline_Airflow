@@ -8233,3 +8233,715 @@ File Path                                                      PID    Runtime   
 /home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.11s           2024-01-04T13:43:06
 ================================================================================
 [2024-01-04T19:13:33.163+0530] {manager.py:469} INFO - Exiting gracefully upon receiving signal 15
+[2024-01-06T12:53:41.031+0530] {manager.py:487} INFO - Processing files using up to 1 processes at a time 
+[2024-01-06T12:53:41.031+0530] {manager.py:488} INFO - Process each file at most once every 30 seconds
+[2024-01-06T12:53:41.031+0530] {manager.py:489} INFO - Checking for new files in /home/rajabala/Desktop/projects/Airflow/dags every 300 seconds
+[2024-01-06T12:53:41.031+0530] {manager.py:755} INFO - Searching for files in /home/rajabala/Desktop/projects/Airflow/dags
+[2024-01-06T12:53:41.033+0530] {manager.py:758} INFO - There are 1 files in /home/rajabala/Desktop/projects/Airflow/dags
+[2024-01-06T12:53:41.181+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.10s           2024-01-06T07:23:41
+================================================================================
+[2024-01-06T12:54:11.982+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.11s           2024-01-06T07:24:11
+================================================================================
+[2024-01-06T12:54:42.355+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.11s           2024-01-06T07:24:42
+================================================================================
+[2024-01-06T12:55:04.901+0530] {manager.py:469} INFO - Exiting gracefully upon receiving signal 15
+[2024-01-06T12:55:13.116+0530] {manager.py:487} INFO - Processing files using up to 1 processes at a time 
+[2024-01-06T12:55:13.116+0530] {manager.py:488} INFO - Process each file at most once every 30 seconds
+[2024-01-06T12:55:13.116+0530] {manager.py:489} INFO - Checking for new files in /home/rajabala/Desktop/projects/Airflow/dags every 300 seconds
+[2024-01-06T12:55:13.116+0530] {manager.py:755} INFO - Searching for files in /home/rajabala/Desktop/projects/Airflow/dags
+[2024-01-06T12:55:13.118+0530] {manager.py:758} INFO - There are 1 files in /home/rajabala/Desktop/projects/Airflow/dags
+[2024-01-06T12:55:13.261+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.10s           2024-01-06T07:25:13
+================================================================================
+[2024-01-06T12:55:43.500+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.11s           2024-01-06T07:25:43
+================================================================================
+[2024-01-06T12:56:13.917+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.11s           2024-01-06T07:26:13
+================================================================================
+[2024-01-06T12:56:44.340+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.11s           2024-01-06T07:26:44
+================================================================================
+[2024-01-06T12:57:14.716+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.11s           2024-01-06T07:27:14
+================================================================================
+[2024-01-06T12:57:44.878+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.11s           2024-01-06T07:27:44
+================================================================================
+[2024-01-06T12:58:15.013+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.11s           2024-01-06T07:28:15
+================================================================================
+[2024-01-06T12:58:45.162+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.11s           2024-01-06T07:28:45
+================================================================================
+[2024-01-06T12:59:15.275+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.11s           2024-01-06T07:29:15
+================================================================================
+[2024-01-06T12:59:46.412+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.11s           2024-01-06T07:29:46
+================================================================================
+[2024-01-06T13:00:13.129+0530] {manager.py:755} INFO - Searching for files in /home/rajabala/Desktop/projects/Airflow/dags
+[2024-01-06T13:00:13.132+0530] {manager.py:758} INFO - There are 1 files in /home/rajabala/Desktop/projects/Airflow/dags
+[2024-01-06T13:00:16.792+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.11s           2024-01-06T07:30:16
+================================================================================
+[2024-01-06T13:00:33.824+0530] {manager.py:469} INFO - Exiting gracefully upon receiving signal 15
+[2024-01-06T14:31:56.549+0530] {manager.py:487} INFO - Processing files using up to 1 processes at a time 
+[2024-01-06T14:31:56.550+0530] {manager.py:488} INFO - Process each file at most once every 30 seconds
+[2024-01-06T14:31:56.550+0530] {manager.py:489} INFO - Checking for new files in /home/rajabala/Desktop/projects/Airflow/dags every 300 seconds
+[2024-01-06T14:31:56.551+0530] {manager.py:755} INFO - Searching for files in /home/rajabala/Desktop/projects/Airflow/dags
+[2024-01-06T14:31:56.553+0530] {manager.py:758} INFO - There are 1 files in /home/rajabala/Desktop/projects/Airflow/dags
+[2024-01-06T14:31:56.723+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.10s           2024-01-06T09:01:56
+================================================================================
+[2024-01-06T14:32:26.869+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.11s           2024-01-06T09:02:26
+================================================================================
+[2024-01-06T14:32:57.228+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.11s           2024-01-06T09:02:57
+================================================================================
+[2024-01-06T14:33:27.627+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.11s           2024-01-06T09:03:27
+================================================================================
+[2024-01-06T14:33:58.008+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.11s           2024-01-06T09:03:58
+================================================================================
+[2024-01-06T14:34:28.266+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.10s           2024-01-06T09:04:28
+================================================================================
+[2024-01-06T14:34:58.651+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.11s           2024-01-06T09:04:58
+================================================================================
+[2024-01-06T14:35:29.030+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.10s           2024-01-06T09:05:29
+================================================================================
+[2024-01-06T14:35:59.390+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.10s           2024-01-06T09:05:59
+================================================================================
+[2024-01-06T14:36:29.737+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.10s           2024-01-06T09:06:29
+================================================================================
+[2024-01-06T14:36:56.575+0530] {manager.py:755} INFO - Searching for files in /home/rajabala/Desktop/projects/Airflow/dags
+[2024-01-06T14:36:56.578+0530] {manager.py:758} INFO - There are 1 files in /home/rajabala/Desktop/projects/Airflow/dags
+[2024-01-06T14:37:00.082+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.11s           2024-01-06T09:07:00
+================================================================================
+[2024-01-06T14:37:30.447+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.10s           2024-01-06T09:07:30
+================================================================================
+[2024-01-06T14:37:32.951+0530] {manager.py:469} INFO - Exiting gracefully upon receiving signal 15
+[2024-01-06T14:37:42.515+0530] {manager.py:487} INFO - Processing files using up to 1 processes at a time 
+[2024-01-06T14:37:42.516+0530] {manager.py:488} INFO - Process each file at most once every 30 seconds
+[2024-01-06T14:37:42.516+0530] {manager.py:489} INFO - Checking for new files in /home/rajabala/Desktop/projects/Airflow/dags every 300 seconds
+[2024-01-06T14:37:42.516+0530] {manager.py:755} INFO - Searching for files in /home/rajabala/Desktop/projects/Airflow/dags
+[2024-01-06T14:37:42.520+0530] {manager.py:758} INFO - There are 1 files in /home/rajabala/Desktop/projects/Airflow/dags
+[2024-01-06T14:37:42.669+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.10s           2024-01-06T09:07:42
+================================================================================
+[2024-01-06T14:38:13.791+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.11s           2024-01-06T09:08:13
+================================================================================
+[2024-01-06T14:38:44.007+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.11s           2024-01-06T09:08:44
+================================================================================
+[2024-01-06T14:39:14.212+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.10s           2024-01-06T09:09:14
+================================================================================
+[2024-01-06T14:39:44.429+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.10s           2024-01-06T09:09:44
+================================================================================
+[2024-01-06T14:40:14.673+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.10s           2024-01-06T09:10:14
+================================================================================
+[2024-01-06T14:40:46.057+0530] {manager.py:487} INFO - Processing files using up to 1 processes at a time 
+[2024-01-06T14:40:46.058+0530] {manager.py:488} INFO - Process each file at most once every 30 seconds
+[2024-01-06T14:40:46.058+0530] {manager.py:489} INFO - Checking for new files in /home/rajabala/Desktop/projects/Airflow/dags every 300 seconds
+[2024-01-06T14:40:46.058+0530] {manager.py:755} INFO - Searching for files in /home/rajabala/Desktop/projects/Airflow/dags
+[2024-01-06T14:40:46.060+0530] {manager.py:758} INFO - There are 1 files in /home/rajabala/Desktop/projects/Airflow/dags
+[2024-01-06T14:40:46.221+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.11s           2024-01-06T09:10:46
+================================================================================
+[2024-01-06T14:41:04.559+0530] {manager.py:469} INFO - Exiting gracefully upon receiving signal 15
+[2024-01-06T14:47:11.036+0530] {manager.py:469} INFO - Exiting gracefully upon receiving signal 15
+[2024-01-06T14:49:27.264+0530] {manager.py:487} INFO - Processing files using up to 1 processes at a time 
+[2024-01-06T14:49:27.264+0530] {manager.py:488} INFO - Process each file at most once every 30 seconds
+[2024-01-06T14:49:27.264+0530] {manager.py:489} INFO - Checking for new files in /home/rajabala/Desktop/projects/Airflow/dags every 300 seconds
+[2024-01-06T14:49:27.265+0530] {manager.py:755} INFO - Searching for files in /home/rajabala/Desktop/projects/Airflow/dags
+[2024-01-06T14:49:27.267+0530] {manager.py:758} INFO - There are 1 files in /home/rajabala/Desktop/projects/Airflow/dags
+[2024-01-06T14:49:27.417+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.10s           2024-01-06T09:19:27
+================================================================================
+[2024-01-06T14:49:54.943+0530] {manager.py:469} INFO - Exiting gracefully upon receiving signal 15
+[2024-01-06T14:55:37.270+0530] {manager.py:487} INFO - Processing files using up to 1 processes at a time 
+[2024-01-06T14:55:37.270+0530] {manager.py:488} INFO - Process each file at most once every 30 seconds
+[2024-01-06T14:55:37.270+0530] {manager.py:489} INFO - Checking for new files in /home/rajabala/Desktop/projects/Airflow/dags every 300 seconds
+[2024-01-06T14:55:37.270+0530] {manager.py:755} INFO - Searching for files in /home/rajabala/Desktop/projects/Airflow/dags
+[2024-01-06T14:55:37.276+0530] {manager.py:758} INFO - There are 1 files in /home/rajabala/Desktop/projects/Airflow/dags
+[2024-01-06T14:55:37.432+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.10s           2024-01-06T09:25:37
+================================================================================
+[2024-01-06T14:56:07.641+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.11s           2024-01-06T09:26:07
+================================================================================
+[2024-01-06T14:56:38.021+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.11s           2024-01-06T09:26:38
+================================================================================
+[2024-01-06T14:57:08.375+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.10s           2024-01-06T09:27:08
+================================================================================
+[2024-01-06T14:57:38.757+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.11s           2024-01-06T09:27:38
+================================================================================
+[2024-01-06T14:58:08.881+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.10s           2024-01-06T09:28:08
+================================================================================
+[2024-01-06T14:58:39.377+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.10s           2024-01-06T09:28:39
+================================================================================
+[2024-01-06T14:59:09.760+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.11s           2024-01-06T09:29:09
+================================================================================
+[2024-01-06T14:59:40.092+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.11s           2024-01-06T09:29:40
+================================================================================
+[2024-01-06T15:00:10.356+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.11s           2024-01-06T09:30:10
+================================================================================
+[2024-01-06T15:00:11.557+0530] {manager.py:469} INFO - Exiting gracefully upon receiving signal 15
+[2024-01-06T15:01:44.546+0530] {manager.py:487} INFO - Processing files using up to 1 processes at a time 
+[2024-01-06T15:01:44.546+0530] {manager.py:488} INFO - Process each file at most once every 30 seconds
+[2024-01-06T15:01:44.546+0530] {manager.py:489} INFO - Checking for new files in /home/rajabala/Desktop/projects/Airflow/dags every 300 seconds
+[2024-01-06T15:01:44.547+0530] {manager.py:755} INFO - Searching for files in /home/rajabala/Desktop/projects/Airflow/dags
+[2024-01-06T15:01:44.551+0530] {manager.py:758} INFO - There are 1 files in /home/rajabala/Desktop/projects/Airflow/dags
+[2024-01-06T15:01:44.715+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.11s           2024-01-06T09:31:44
+================================================================================
+[2024-01-06T15:02:02.957+0530] {manager.py:469} INFO - Exiting gracefully upon receiving signal 15
+[2024-01-06T15:02:15.469+0530] {manager.py:487} INFO - Processing files using up to 1 processes at a time 
+[2024-01-06T15:02:15.470+0530] {manager.py:488} INFO - Process each file at most once every 30 seconds
+[2024-01-06T15:02:15.470+0530] {manager.py:489} INFO - Checking for new files in /home/rajabala/Desktop/projects/Airflow/dags every 300 seconds
+[2024-01-06T15:02:15.470+0530] {manager.py:755} INFO - Searching for files in /home/rajabala/Desktop/projects/Airflow/dags
+[2024-01-06T15:02:15.474+0530] {manager.py:758} INFO - There are 1 files in /home/rajabala/Desktop/projects/Airflow/dags
+[2024-01-06T15:02:15.632+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.10s           2024-01-06T09:32:15
+================================================================================
+[2024-01-06T15:02:45.800+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.10s           2024-01-06T09:32:45
+================================================================================
+[2024-01-06T15:03:16.190+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.11s           2024-01-06T09:33:16
+================================================================================
+[2024-01-06T15:03:46.533+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.11s           2024-01-06T09:33:46
+================================================================================
+[2024-01-06T15:04:16.898+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.10s           2024-01-06T09:34:16
+================================================================================
+[2024-01-06T15:04:47.097+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.10s           2024-01-06T09:34:47
+================================================================================
+[2024-01-06T15:05:17.553+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.11s           2024-01-06T09:35:17
+================================================================================
+[2024-01-06T15:05:47.934+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.11s           2024-01-06T09:35:47
+================================================================================
+[2024-01-06T15:06:18.302+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.10s           2024-01-06T09:36:18
+================================================================================
+[2024-01-06T15:06:48.565+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.10s           2024-01-06T09:36:48
+================================================================================
+[2024-01-06T15:07:15.483+0530] {manager.py:755} INFO - Searching for files in /home/rajabala/Desktop/projects/Airflow/dags
+[2024-01-06T15:07:15.485+0530] {manager.py:758} INFO - There are 1 files in /home/rajabala/Desktop/projects/Airflow/dags
+[2024-01-06T15:07:18.686+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.10s           2024-01-06T09:37:18
+================================================================================
+[2024-01-06T15:07:49.210+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.10s           2024-01-06T09:37:49
+================================================================================
+[2024-01-06T15:08:19.586+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.10s           2024-01-06T09:38:19
+================================================================================
+[2024-01-06T15:08:49.934+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.10s           2024-01-06T09:38:49
+================================================================================
+[2024-01-06T15:09:20.131+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.11s           2024-01-06T09:39:20
+================================================================================
+[2024-01-06T15:09:50.600+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.10s           2024-01-06T09:39:50
+================================================================================
+[2024-01-06T15:10:20.980+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.10s           2024-01-06T09:40:20
+================================================================================
+[2024-01-06T15:10:51.354+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.10s           2024-01-06T09:40:51
+================================================================================
+[2024-01-06T15:11:21.587+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.11s           2024-01-06T09:41:21
+================================================================================
+[2024-01-06T15:11:51.941+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.10s           2024-01-06T09:41:51
+================================================================================
+[2024-01-06T15:12:15.529+0530] {manager.py:755} INFO - Searching for files in /home/rajabala/Desktop/projects/Airflow/dags
+[2024-01-06T15:12:15.533+0530] {manager.py:758} INFO - There are 1 files in /home/rajabala/Desktop/projects/Airflow/dags
+[2024-01-06T15:12:22.326+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.10s           2024-01-06T09:42:22
+================================================================================
+[2024-01-06T15:12:52.707+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.11s           2024-01-06T09:42:52
+================================================================================
+[2024-01-06T15:13:23.077+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.10s           2024-01-06T09:43:23
+================================================================================
+[2024-01-06T15:13:53.421+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.11s           2024-01-06T09:43:53
+================================================================================
+[2024-01-06T15:14:23.794+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.11s           2024-01-06T09:44:23
+================================================================================
+[2024-01-06T15:14:54.163+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.10s           2024-01-06T09:44:54
+================================================================================
+[2024-01-06T15:15:24.528+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.10s           2024-01-06T09:45:24
+================================================================================
+[2024-01-06T15:15:54.906+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.10s           2024-01-06T09:45:54
+================================================================================
+[2024-01-06T15:16:25.275+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.11s           2024-01-06T09:46:25
+================================================================================
+[2024-01-06T15:16:55.662+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.11s           2024-01-06T09:46:55
+================================================================================
+[2024-01-06T15:17:15.583+0530] {manager.py:755} INFO - Searching for files in /home/rajabala/Desktop/projects/Airflow/dags
+[2024-01-06T15:17:15.585+0530] {manager.py:758} INFO - There are 1 files in /home/rajabala/Desktop/projects/Airflow/dags
+[2024-01-06T15:17:26.073+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.10s           2024-01-06T09:47:26
+================================================================================
+[2024-01-06T15:17:56.449+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.10s           2024-01-06T09:47:56
+================================================================================
+[2024-01-06T15:18:26.829+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.11s           2024-01-06T09:48:26
+================================================================================
+[2024-01-06T15:18:57.205+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.11s           2024-01-06T09:48:57
+================================================================================
+[2024-01-06T15:19:27.577+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.10s           2024-01-06T09:49:27
+================================================================================
+[2024-01-06T15:19:57.961+0530] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/rajabala/Desktop/projects/Airflow/dags/Crickbuzz_dag.py                           1           0  0.10s           2024-01-06T09:49:57
+================================================================================
+[2024-01-06T15:20:26.711+0530] {manager.py:469} INFO - Exiting gracefully upon receiving signal 15

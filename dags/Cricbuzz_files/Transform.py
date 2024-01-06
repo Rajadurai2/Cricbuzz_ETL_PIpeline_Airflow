@@ -432,7 +432,7 @@ def clean(url):
     df.to_csv(f"Transformed_files/cleaned_{file_name}.csv",index=False)
     
 
-def Transform_multiple_files(url,**kwargs):
+def Transform_multiple_files(**kwargs):
     ti = kwargs['ti']
     execution_date = kwargs['ds']
     # Retrieve the result from XCom

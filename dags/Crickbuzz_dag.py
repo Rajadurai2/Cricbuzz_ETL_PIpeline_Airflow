@@ -1,19 +1,15 @@
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from airflow.operators.bash_operator import BashOperator
-from airflow.providers.apache.hdfs.hooks.webhdfs import WebHDFSHook 
-#from airflow.providers.apache.hdfs.hooks import webhdfs. as h
+from airflow.providers.apache.hdfs.hooks.webhdfs import WebHDFSHook
+from airflow.providers.postgres.operators.postgres import PostgresOperator
+from airflow.operators.python_operator import BranchPythonOperator
 
-#import airflow.providers.apache.hdfs.hooks as hdfs 
-# hiiiiiiiiii
 import json
-
 from datetime import datetime,timedelta
 
 match_url = [["https://www.cricbuzz.com/cricket-full-commentary/75437/ind-vs-aus-5th-match-icc-cricket-world-cup-2023",'https://www.cricbuzz.com/cricket-full-commentary/66183/srh-vs-rr-4th-match-indian-premier-league-2023']]
 
-from airflow.providers.postgres.operators.postgres import PostgresOperator
-from airflow.operators.python_operator import BranchPythonOperator
 from Cricbuzz_files.Extract import  Scrap_multiple_sites
 from Cricbuzz_files.Transform import Transform_multiple_files
 from Cricbuzz_files.Load import load_multiple_files
@@ -26,11 +22,7 @@ def condition_to_skip(**kwargs):
     print(type(data_dict))
 
     print("file = ",data_dict)
-    test_dates = {'2023-12-28': ['https://www.cricbuzz.com/cricket-full-commentary/66169/gt-vs-csk-1st-match-indian-premier-league-2023'],
-                    '2024-01-01': ['https://www.cricbuzz.com/cricket-full-commentary/66173/pbks-vs-kkr-2nd-match-indian-premier-league-2023',
-                                    'https://www.cricbuzz.com/cricket-full-commentary/66176/lsg-vs-dc-3rd-match-indian-premier-league-2023'],
-                    '2024-01-03': ['https://www.cricbuzz.com/cricket-full-commentary/66183/srh-vs-rr-4th-match-indian-premier-league-2023'],}
-    
+
     match_dates = data_dict
 
     print("execution_date =",execution_date)
@@ -39,15 +31,57 @@ def condition_to_skip(**kwargs):
         return 'run_today'
     
     else:
-        print(help(WebHDFSHook))
+        print(WebHDFSHook)
         return 'skip_today'
     
     # Implement your condition based on the execution date
 
+def load_to_hadoop(match_url):
+    file_name=match_url.split('/')[-1]
+    print(file_name)
+
+    webHDFS_hook = WebHDFSHook(webhdfs_conn_id="HADOOP_CONNECTION")
+    client = webHDFS_hook.get_conn()
+    print(client)
+    local_file_path = f'./Scraped__raw_files/{file_name}.csv'
+
+    # HDFS destination path
+    hdfs_destination_path = f'/IPL_2023/Scraped__raw_files/{file_name}.csv'
+
+    # Use the hook to copy the file to HDFS
+    webHDFS_hook.load_file(local_file_path, hdfs_destination_path)
+
+    webHDFS_hook.load_file(f"./Transformed_files/cleaned_{file_name}.csv",f'/IPL_2023/Transformed_files/cleaned_{file_name}.csv')
+
+
+    print("------------------------------------Success ---------------------------------------------")
+
+def load_files_to_hadoop(**kwargs):
+    ti = kwargs['ti']
+    execution_date = kwargs['ds']
+    # Retrieve the result from XCom
+    match_url = ti.xcom_pull(task_ids='Get_schedule', key=execution_date)
+
+    print(match_url)
+    print(type(match_url))
+    if len(match_url)>1:
+        print("working")
+        for link in match_url :
+            print(f'-------------------------{link}--loading_to_db_started----------------------------------------')
+            load_to_hadoop(link)
+            print(f'---------------------------------{link}loading_to_db_started ------------------------------')
+    elif len(match_url) == 1:
+        print("1-link",match_url[0])
+
+        load_to_hadoop(match_url[0])
+    
+    else :
+        print("errrrrrrorrrrrrrrrrrrrrrrrrrr.......................")
+
 
 
 dag = DAG(dag_id='Cricbuzz_ETL',
-    start_date = datetime(2024,1,1),
+    start_date = datetime(2024,1,1,23,59),
     schedule_interval=None,
     schedule='@daily',
     description='This pipline is to get the data from the Cricbuzz site',
@@ -133,19 +167,11 @@ run_today = BashOperator(
     dag=dag,
 )
 
-# trigger_task = TriggerDagRunOperator(
-#     task_id='trigger_task',
-#     trigger_dag_id='Cricbuzz_ETL',
-#     conf={'match_urls': '{{ ti.xcom_pull(task_ids="branch_task") }}'},
-#     dag=dag,
-# )
-
 Extract = PythonOperator(
     task_id='Extract',
     retries=1,
     retry_delay= timedelta(seconds=20),
     python_callable=Scrap_multiple_sites,
-    op_args = match_url,
     dag=dag,
 )
 
@@ -154,65 +180,18 @@ transform = PythonOperator(
     task_id='transform',
     retries=None,
     python_callable=Transform_multiple_files,
-    op_args = match_url,
     dag=dag,
 )
 
 load_to_postgres = PythonOperator(
     task_id = 'load_to_postgres',
-    trigger_rule='all_done',
-    retries=0,
     python_callable=load_multiple_files,
     dag = dag,
 )
-def load_to_hadoop(match_url):
-    file_name=match_url.split('/')[-1]
-    print(file_name)
-
-    webHDFS_hook = WebHDFSHook(webhdfs_conn_id="HADOOP_CONNECTION")
-    client = webHDFS_hook.get_conn()
-    print(client)
-    local_file_path = f'./Scraped__raw_files/{file_name}.csv'
-
-    # HDFS destination path
-    hdfs_destination_path = '/IPL_2023/Scraped__raw_files/'
-
-    # Use the hook to copy the file to HDFS
-    webHDFS_hook.load_file(local_file_path, hdfs_destination_path)
-
-    webHDFS_hook.load_file(f"./Transformed_files/cleaned_{file_name}.csv",'/IPL_2023/Transformed_files/')
-
-
-    print("------------------------------------Success ---------------------------------------------")
-    # client.<operation>
-
-def load_files_to_hadoop(**kwargs):
-    ti = kwargs['ti']
-    execution_date = kwargs['ds']
-    # Retrieve the result from XCom
-    match_url = ti.xcom_pull(task_ids='Get_schedule', key=execution_date)
-
-    print(match_url)
-    print(type(match_url))
-    if len(match_url)>1:
-        print("working")
-        for link in match_url :
-            print(f'-------------------------{link}--loading_to_db_started----------------------------------------')
-            load_to_hadoop(link)
-            print(f'---------------------------------{link}loading_to_db_started ------------------------------')
-    elif len(match_url) == 1:
-        print("1-link",match_url[0])
-
-        load_to_hadoop(match_url[0])
-    
-    else :
-        print("errrrrrrorrrrrrrrrrrrrrrrrrrr.......................")
-
 
 
 transfer_task = PythonOperator(
     task_id='transfer_to_hdfs',
-    trigger_rule='all_done',
     python_callable = load_files_to_hadoop,
     provide_context = True,
     dag=dag,

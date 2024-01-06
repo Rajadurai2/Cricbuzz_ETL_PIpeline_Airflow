@@ -1,22 +1,30 @@
 version: '3'
 
-# ====================================== AIRFLOW ENVIRONMENT VARIABLES =======================================
-x-environment: &airflow_environment
-  - AIRFLOW__CORE__EXECUTOR=LocalExecutor
-  - AIRFLOW__CORE__LOAD_DEFAULT_CONNECTIONS=False
-  - AIRFLOW__CORE__LOAD_EXAMPLES=False 
-
-  - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@POSTGRES_AIRFLOW_DB/airflow
-  - AIRFLOW_CONN_HADOOP_CONNECTION=webhdfs://namenode:9870
-  - AIRFLOW_CONN_CRICBUZZ_DB=postgresql://rajabala:rajabala@POSTGRES_CRICBUZZ_DB/Crickbuzz
-
-  - AIRFLOW__CORE__STORE_DAG_CODE=True
-  - AIRFLOW__CORE__STORE_SERIALIZED_DAGS=True
-  - AIRFLOW__WEBSERVER__EXPOSE_CONFIG=True
-
-x-airflow-image: &airflow_image airflow_rajabala:latest
-
 services:
+  airflow:
+    image: maybe   
+    command: standalone
+    ports:
+      - "8080:8080"
+    depends_on:
+      - POSTGRES_AIRFLOW_DB
+      - POSTGRES_CRICBUZZ_DB
+      - chrome
+    environment:
+      - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@POSTGRES_AIRFLOW_DB/airflow
+      - AIRFLOW_CONN_HADOOP_CONNECTION=webhdfs://namenode:9870
+      - AIRFLOW_CONN_CRICBUZZ_DB=postgresql://rajabala:rajabala@POSTGRES_CRICBUZZ_DB/Crickbuzz
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__WEBSERVER__SECRET_KEY=airflow
+      - AIRFLOW_DB_MIGRATE='true'
+      - AIRFLOW_WWW_USER_CREATE='true'
+      - AIRFLOW_WWW_USER_USERNAME= airflow
+      - AIRFLOW_WWW_USER_PASSWORD= airflow
+
+    volumes:
+      - hadoop_namenode:/hadoop/dfs/name
+    
+
   POSTGRES_AIRFLOW_DB:
     image: postgres:13
     ports:
@@ -35,11 +43,14 @@ services:
       - POSTGRES_DB=Crickbuzz
       - POSTGRES_USER=rajabala
       - POSTGRES_PASSWORD=rajabala
+
+  
+  
   chrome:
     image: selenium/standalone-chrome
     ports:
       - "4444:4444"
-  
+
   namenode:
     image: bde2020/hadoop-namenode:2.0.0-hadoop3.2.1-java8
     container_name: namenode
@@ -93,47 +104,12 @@ services:
       - hadoop_historyserver:/hadoop/yarn/timeline
     env_file:
       - ./hadoop.env
-
-  init:
-    image: *airflow_image
-    depends_on:
-      - POSTGRES_AIRFLOW_DB
-      - POSTGRES_CRICBUZZ_DB
-      - chrome
-    environment: *airflow_environment
-    entrypoint: /bin/bash
-    command: -c 'airflow db init && airflow users create --username rajabala --password rajabala --firstname Rajadurai --lastname Balamurugan --role Admin --email rajabalasuguna@gmail.com'
-
-  webserver:
-    image: *airflow_image
-    restart: always
-    depends_on:
-      - POSTGRES_AIRFLOW_DB
-      - POSTGRES_CRICBUZZ_DB
-      - chrome
-    ports:
-      - "8080:8080"
-    volumes:
-      - logs:/opt/airflow/logs
-    environment: *airflow_environment
-    command: webserver
-
-  scheduler:
-    image: *airflow_image
-    restart: always
-    depends_on:
-      - POSTGRES_AIRFLOW_DB
-      - POSTGRES_CRICBUZZ_DB
-      - chrome
-    volumes:
-      - logs:/opt/airflow/logs
-      - ./dags:/opt/airflow/dags
-    environment: *airflow_environment
-    command: scheduler
-
   
 volumes:
   hadoop_namenode:
   hadoop_datanode:
   hadoop_historyserver:
-  logs:
+
+
+
+
