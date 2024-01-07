@@ -33,11 +33,11 @@ In Sports Analytics, cricket datasets are mostly paid and offer basic informatio
 
 ## Archietecture 
 
-<img src="archetecture.png">
+<img src="./assets/archetecture.png">
 
 ##  Pipeline
 
-<img src="dag.png">
+<img src="./assets/dag.png">
 
 
 ## Execute this project 
