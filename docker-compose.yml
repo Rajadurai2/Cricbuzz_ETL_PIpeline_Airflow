@@ -14,7 +14,7 @@ x-environment: &airflow_environment
   - AIRFLOW__CORE__STORE_SERIALIZED_DAGS=True
   - AIRFLOW__WEBSERVER__EXPOSE_CONFIG=True
 
-x-airflow-image: &airflow_image airflow_rajabala:latest
+x-airflow-image: &airflow_image airflow_cricbuzz:latest
 
 services:
   POSTGRES_AIRFLOW_DB:

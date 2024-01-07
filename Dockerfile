@@ -9,7 +9,7 @@ RUN pip install --no-cache-dir "apache-airflow==${AIRFLOW_VERSION}" --user -r /r
 
 COPY ./dags/ /opt/airflow/dags
 
-COPY schedule.json .
+COPY get_schedule.py .
 
 RUN mkdir Transformed_files
 
