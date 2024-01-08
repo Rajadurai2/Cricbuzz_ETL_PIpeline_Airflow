@@ -4,8 +4,17 @@
 
 In Sports Analytics, cricket datasets are mostly paid and offer basic information. To enhance player details for advanced analysis, I've created an ETL pipeline. It collects many useful data from https://www.cricbuzz.com/, storing it in our Postgres database and Hadoop clusters, for a given scheduled series
 
+By giving a Cricket_match_schedule_url we can extract the data of the enitre series
 
-
+- Special features extracted by this pipeline
+   ```bash
+   # Ball's Commentry Text
+   # Ball's length
+   # Ball's line
+   # Batsman's shot
+   # BAll destination
+   # other ball's information
+- I created a IPl dataset by using this pipeline [IPL_DATASET_2017-2023](https://github.com/Rajadurai2/IPL-Complete_Dataset) 
 ## Tools
 ### Automation and ETL Pipeline
 
@@ -110,3 +119,9 @@ In Sports Analytics, cricket datasets are mostly paid and offer basic informatio
 4. To run a command inside any container
    ```bash
    docker exec -it container_id your_command
+
+## Note
+1. Now this code works for both T20 and ODI series  
+2. Need some modification in Extract code for Test series
+3. Default time_zone is set for India timezone .Change timezone as need
+4. Change Start_date of the DAG as need
