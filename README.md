@@ -14,7 +14,7 @@ By giving a Cricket_match_schedule_url we can extract the data of the enitre ser
    # Batsman's shot
    # BAll destination
    # other ball's information
-- I created a IPl dataset by using this pipeline [IPL_DATASET_2017-2023](https://github.com/Rajadurai2/IPL-Complete_Dataset) 
+- I created a IPl dataset by using this pipeline check this [IPL_DATASET_2017-2023](https://github.com/Rajadurai2/IPL-Complete_Dataset) 
 ## Tools
 ### Automation and ETL Pipeline
 
@@ -49,7 +49,7 @@ By giving a Cricket_match_schedule_url we can extract the data of the enitre ser
 <img src="./assets/dag.png">
 
 
-## Execute this project 
+## To Execute this project 
 
 
 
@@ -72,7 +72,7 @@ By giving a Cricket_match_schedule_url we can extract the data of the enitre ser
    docker-compose up -d
 6. Create Schedule.json file 
    ```bash
-   docker exec -it airflow_scheduler_1 python get_schedule.py your_series_schedule_url
+   docker exec -it cricbuzz_etl_pipeline_airflow_scheduler_1 python get_schedule.py your_series_schedule_url
    # get your_series_schedule_url from https://www.cricbuzz.com/cricket-schedule/series
 7. Login to Airflow UI [http://localhost:8080/](http://localhost:8080/)
    ```bash
