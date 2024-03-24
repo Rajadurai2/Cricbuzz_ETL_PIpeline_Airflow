@@ -35,7 +35,7 @@ def load_to_db(url):
     ball_by_ball_data.to_sql(name='ball_by_ball_data', con=conn, index=False, if_exists='replace')
 
     match_data.to_sql(name='match_data',con=conn,index=False, if_exists='replace')
- 
+
 
 
 def load_multiple_files(**kwargs):

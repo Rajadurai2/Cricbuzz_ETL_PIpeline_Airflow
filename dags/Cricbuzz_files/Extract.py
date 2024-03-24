@@ -1,4 +1,4 @@
-
+from Cricbuzz_files.config import short_name as teams_short_name
 def web_scrap(url):
     #url = "https://www.cricbuzz.com/cricket-full-commentary/75437/ind-vs-aus-5th-match-icc-cricket-world-cup-2023"
     # ti = kwargs['ti']
@@ -67,38 +67,7 @@ def web_scrap(url):
     # convert the full name of the teams to short name 
 
     def short_name(team):
-            short_name={
-                # IPL teams
-                'Chennai Super Kings':'CSK',
-        'Mumbai Indians':'MI',
-        'Gujarat Titans':'GT',
-        'Kolkata Knight Riders':'KKR',
-        'Punjab Kings':'PBKS',
-        'Sunrisers Hyderabad':'SRH',
-        'Rajasthan Royals':'RR',
-        'Lucknow Super Giants':'LSG',
-        'Delhi Capitals':'DC',
-        'Delhi Daredevils':'DD',
-        'Royal Challengers Bangalore':'RCB',
-        'Kings XI Punjab':'PBKS',
-        'Rising Pune Supergiant':'RPS',
-        'Gujarat Lions':'GL',
-        # International teams 
-                
-        'Australia': 'AUS',
-        'Bangladesh': 'BAN',
-        'England': 'ENG',
-        'India': 'IND',
-        'New Zealand': 'NZ',
-        'Pakistan': 'PAK',
-        'South Africa': 'SA',
-        'Sri Lanka': 'SL',
-        'West Indies': 'WI',
-        'Afghanistan': 'AFG',
-        'Ireland': 'IRE',
-        'Zimbabwe': 'ZIM',                   
-        }
-            return short_name[team]
+        return teams_short_name(team)
         
     def find_toss():
         toss=cricbuzz_soup.find_all('p',{'class':"cb-com-ln ng-binding ng-scope cb-col cb-col-90"})

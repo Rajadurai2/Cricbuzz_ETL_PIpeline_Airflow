@@ -66,7 +66,7 @@ By giving a Cricket_match_schedule_url we can extract the data of the enitre ser
    cd Cricbuzz_ETL_PIpeline_Airflow
 4. Build our docker image 
    ```bash
-   docker build -d airflow_cricbuzz .
+   docker build -t airflow_cricbuzz .
 5. Run all containers 
    ```bash
    docker-compose up -d
@@ -74,12 +74,15 @@ By giving a Cricket_match_schedule_url we can extract the data of the enitre ser
    ```bash
    docker exec -it cricbuzz_etl_pipeline_airflow_scheduler_1 python get_schedule.py your_series_schedule_url
    # get your_series_schedule_url from https://www.cricbuzz.com/cricket-schedule/series
-7. Login to Airflow UI [http://localhost:8080/](http://localhost:8080/)
+7. Open dags/Cricbuzz_files/config.py
+   ```bash
+   Update Start_date  # Start_date of a tournament (change time as per end of the match time)
+   Update team_names
+8. Login to Airflow UI [http://localhost:8080/](http://localhost:8080/)
    ```bash
     # USERNAME : rajabala 
     # PASSWORD : rajabala
-8. Unpause our Crickbuzz_ETL DAG
-
+   Unpause our Crickbuzz_ETL DAG
 9. Open Pgadmin or Dbeaver to view or data 
    ```bash
    # Database = Crickbuzz
