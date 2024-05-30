@@ -73,7 +73,10 @@ def web_scrap(url):
         toss=cricbuzz_soup.find_all('p',{'class':"cb-com-ln ng-binding ng-scope cb-col cb-col-90"})
         for i in toss:
             if "won the toss" in i.get_text().lower():
+                print(i)
                 return i.get_text()
+            else:
+                return None
             
     
     def team_names():
@@ -190,11 +193,9 @@ def web_scrap(url):
     #match_commentary_df
 
     toss_string=find_toss()
-    
+    print("toss_string------------------",toss_string)
     team_a,team_b=team_names()
-    
-    # print('team_a=',team_a)
-    # print('teamb=',team_b)
+
     match_commentary_df['match_no']=match_no()
     match_commentary_df['team_a']=team_a
     match_commentary_df['team_b']=team_b
@@ -207,13 +208,20 @@ def web_scrap(url):
     match_commentary_df['season']=year
     match_commentary_df['venue']=venue
     match_commentary_df['date']=date
-    match_commentary_df['toss']=find_toss()
-    match_commentary_df['winner']=winner
-    match_commentary_df['player_of_the_match']=playe_of_the_match
-    match_commentary_df['toss_winner']= short_name(toss_string[:toss_string.find('have')].strip())
-    match_commentary_df['toss_choosen']= toss_string.split(' ')[-1]
+    if toss_string == None:           
+        match_commentary_df['toss']= "Not started"
+        match_commentary_df['winner']="Not started"
+        match_commentary_df['player_of_the_match']="Not started"
+        match_commentary_df['toss_winner']= "Not started"
+        match_commentary_df['toss_choosen']= "Not started"
+    else:
+        match_commentary_df['toss']=find_toss()
+        match_commentary_df['winner']=winner
+        match_commentary_df['player_of_the_match']=playe_of_the_match
+        match_commentary_df['toss_winner']= short_name(toss_string[:toss_string.find('have')].strip())
+        match_commentary_df['toss_choosen']= toss_string.split(' ')[-1]
+
     #print(match_commentary_df)
-    
     match_commentary_df.to_csv(f"Scraped__raw_files/{match_name}.csv",index=False)
 
 

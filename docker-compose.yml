@@ -131,7 +131,8 @@ services:
     volumes:
       - logs:/opt/airflow/logs
       - ./dags:/opt/airflow/dags
-      - ./Loaded_files:/opt/airflow/Loaded_files
+      - ./Loaded_files:/opt/airflow/Scraped_raw_files
+      - ./get_schedule.py:/opt/airflow/get_schedule.py
     environment: *airflow_environment
     command: scheduler
 

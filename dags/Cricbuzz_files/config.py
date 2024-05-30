@@ -4,7 +4,7 @@ from datetime import datetime
 # change your start time here
 # format = daterime(YYYY,MM,DD,HH,MM)
 
-start_date = datetime(2024,3,21,23,59)
+start_date = datetime(2024,5,17,23,59)
 
 
 # Edit or your Add your team names with their short names here

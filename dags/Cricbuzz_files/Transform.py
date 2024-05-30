@@ -13,13 +13,16 @@ def clean(url):
         return teams_short_name(team)
 
     def find_toss():
-        toss=df['toss'][0]
-        toss_win=toss[:toss.find('have')]
-        toss_choose=toss.split(' ')[-1]
-        
-        df['toss_winner']=short_name(toss_win.strip())
-        df['toss_choosen']=toss_choose
-        
+        if df["toss"][0] == "Not started":
+            df['toss_winner'],df['toss_choosen'] = "Declined","Declined"
+        else:
+            toss=df['toss'][0]
+            toss_win=toss[:toss.find('have')]
+            toss_choose=toss.split(' ')[-1]
+            df['toss_winner']=short_name(toss_win.strip())
+            df['toss_choosen']=toss_choose
+            
+            
         
     def find_bowling_team():
         toss_winner=df['toss_winner'][0]
@@ -381,21 +384,24 @@ def clean(url):
         
         df['win']=win
         df['man_of_the_match']=man_of_the_match
-
-    find_toss()
-    find_innings()
-    find_bowling_team() 
-    find_batsman_bowler()
-    find_runs()
-    find_length()
-    find_line()
-    find_destination()
-    find_shots()
-    find_speed()
-    find_out_type()
-    find_match_no()
-    get_moth()
     
+    if df["toss"][0] == "Not started":
+        df['toss_winner'],df['toss_choosen'] = "Declined","Declined"
+    else:
+        find_toss()
+        find_innings()
+        find_bowling_team() 
+        find_batsman_bowler()
+        find_runs()
+        find_length()
+        find_line()
+        find_destination()
+        find_shots()
+        find_speed()
+        find_out_type()
+        find_match_no()
+        get_moth()
+        
     df.to_csv(f"Transformed_files/cleaned_{file_name}.csv",index=False)
     
 

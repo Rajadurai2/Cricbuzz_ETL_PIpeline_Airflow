@@ -29,8 +29,10 @@ def get_schedule(url):
     prev_key = None
     for i in date:
         day = (i.find('div',{'class':'cb-col-25 cb-col pad10 schedule-date ng-isolate-scope'})).text
-        link = i.a['href']
-        
+        try:
+            link = i.a['href']
+        except:
+            link = ""
         a = link.split('/')[2:]
         a = '/'.join(a)
         http = 'https://www.cricbuzz.com/cricket-full-commentary/'
@@ -67,4 +69,5 @@ def get_schedule(url):
 
 
 if __name__ == '__main__':
+    print(sys.argv[1])
     get_schedule(sys.argv[1])
