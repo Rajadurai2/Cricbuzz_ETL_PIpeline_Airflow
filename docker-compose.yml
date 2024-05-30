@@ -37,9 +37,6 @@ services:
       - POSTGRES_PASSWORD=rajabala
   chrome:
     image: selenium/standalone-chrome
-    volumes:
-      - /dev/shm:/dev/shm
-      - ./tempDownload:/home/seluser/Downloads
     ports:
       - "4444:4444"
   
@@ -131,8 +128,6 @@ services:
     volumes:
       - logs:/opt/airflow/logs
       - ./dags:/opt/airflow/dags
-      - ./Loaded_files:/opt/airflow/Scraped_raw_files
-      - ./get_schedule.py:/opt/airflow/get_schedule.py
     environment: *airflow_environment
     command: scheduler
 
@@ -142,4 +137,3 @@ volumes:
   hadoop_datanode:
   hadoop_historyserver:
   logs:
-

@@ -15,13 +15,6 @@ RUN mkdir Transformed_files
 
 RUN mkdir Scraped__raw_files
 
-RUN mkdir Loaded_files
-
-RUN mkdir Loaded_files/ball_data
-
-RUN mkdir Loaded_files/match_data
-
-
 
 
 

@@ -4,7 +4,6 @@ from airflow.operators.bash_operator import BashOperator
 from airflow.providers.apache.hdfs.hooks.webhdfs import WebHDFSHook
 from airflow.providers.postgres.operators.postgres import PostgresOperator
 from airflow.operators.python_operator import BranchPythonOperator
-from Cricbuzz_files.config import start_date 
 
 import json
 from datetime import datetime,timedelta
@@ -82,7 +81,7 @@ def load_files_to_hadoop(**kwargs):
 
 
 dag = DAG(dag_id='Cricbuzz_ETL',
-    start_date = start_date,
+    start_date = datetime(2024,1,1,23,59),
     schedule_interval=None,
     schedule='@daily',
     description='This pipline is to get the data from the Cricbuzz site',
