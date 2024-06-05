@@ -32,9 +32,9 @@ def load_to_db(url):
     db = create_engine(conn_string)
     conn = db.connect()
 
-    ball_by_ball_data.to_sql(name='ball_by_ball_data', con=conn, index=False, if_exists='replace')
+    ball_by_ball_data.to_sql(name='ball_by_ball_data', con=conn, index=False, if_exists='append')
 
-    match_data.to_sql(name='match_data',con=conn,index=False, if_exists='replace')
+    match_data.to_sql(name='match_data',con=conn,index=False, if_exists='append')
  
 
 

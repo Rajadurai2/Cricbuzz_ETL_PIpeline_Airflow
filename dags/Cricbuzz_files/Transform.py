@@ -1,3 +1,4 @@
+from Cricbuzz_files.config import short_name 
 def clean(url):
     #url = "https://www.cricbuzz.com/cricket-full-commentary/75437/ind-vs-aus-5th-match-icc-cricket-world-cup-2023" 
     file_name=url.split('/')[-1]
@@ -8,52 +9,13 @@ def clean(url):
     df=pd.read_csv(f'Scraped__raw_files/{file_name}.csv')
 
 
-    def short_name(team):
-            short_name={
-                # IPL teams
-                'Chennai Super Kings':'CSK',
-        'Mumbai Indians':'MI',
-        'Gujarat Titans':'GT',
-        'Kolkata Knight Riders':'KKR',
-        'Punjab Kings':'PBKS',
-        'Sunrisers Hyderabad':'SRH',
-        'Rajasthan Royals':'RR',
-        'Lucknow Super Giants':'LSG',
-        'Delhi Capitals':'DC',
-        'Delhi Daredevils':'DD',
-        'Royal Challengers Bangalore':'RCB',
-        'Kings XI Punjab':'PBKS',
-        'Rising Pune Supergiant':'RPS',
-        'Gujarat Lions':'GL',
-        # International teams 
-                
-        'Australia': 'AUS',
-        'Bangladesh': 'BAN',
-        'England': 'ENG',
-        'India': 'IND',
-        'New Zealand': 'NZ',
-        'Pakistan': 'PAK',
-        'South Africa': 'SA',
-        'Sri Lanka': 'SL',
-        'West Indies': 'WI',
-        'Afghanistan': 'AFG',
-        'Ireland': 'IRE',
-        'Zimbabwe': 'ZIM',
-                
-                
-                        
-        }
-            return short_name[team]
 
     def find_toss():
-        if df["toss"][0] == "Not started":
-            df['toss_winner'],df['toss_choosen'] = "Declined","Declined"
-        else:
-            toss=df['toss'][0]
-            toss_win=toss[:toss.find('have')]
-            toss_choose=toss.split(' ')[-1]
-            df['toss_winner']=short_name(toss_win.strip())
-            df['toss_choosen']=toss_choose
+        toss=df['toss'][0]
+        toss_win=toss[:toss.find('have')]
+        toss_choose=toss.split(' ')[-1]
+        df['toss_winner']=short_name(toss_win.strip())
+        df['toss_choosen']=toss_choose
             
             
         
@@ -418,22 +380,21 @@ def clean(url):
         df['win']=win
         df['man_of_the_match']=man_of_the_match
     
-    if df["toss"][0] == "Not started":
-        df['toss_winner'],df['toss_choosen'] = "Declined","Declined"
-    else:
-        find_toss()
-        find_innings()
-        find_bowling_team() 
-        find_batsman_bowler()
-        find_runs()
-        find_length()
-        find_line()
-        find_destination()
-        find_shots()
-        find_speed()
-        find_out_type()
-        find_match_no()
-        get_moth()
+
+
+    find_toss()
+    find_innings()
+    find_bowling_team() 
+    find_batsman_bowler()
+    find_runs()
+    find_length()
+    find_line()
+    find_destination()
+    find_shots()
+    find_speed()
+    find_out_type()
+    find_match_no()
+    get_moth()
         
     df.to_csv(f"Transformed_files/cleaned_{file_name}.csv",index=False)
     

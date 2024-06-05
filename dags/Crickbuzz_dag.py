@@ -19,10 +19,6 @@ def condition_to_skip(**kwargs):
     with open('schedule.json', 'r') as json_file:
         data_dict = json.load(json_file)
     
-    print(type(data_dict))
-
-    print("file = ",data_dict)
-
     match_dates = data_dict
 
     print("execution_date =",execution_date)
@@ -31,7 +27,6 @@ def condition_to_skip(**kwargs):
         return 'run_today'
     
     else:
-        print(WebHDFSHook)
         return 'skip_today'
     
     # Implement your condition based on the execution date
@@ -81,7 +76,7 @@ def load_files_to_hadoop(**kwargs):
 
 
 dag = DAG(dag_id='Cricbuzz_ETL',
-    start_date = datetime(2024,1,1,23,59),
+    start_date = datetime(2024,3,21,23,59),
     schedule_interval=None,
     schedule='@daily',
     description='This pipline is to get the data from the Cricbuzz site',

@@ -15,6 +15,8 @@ def web_scrap(url):
     import time
     from selenium.webdriver.common.by import By
     from selenium import webdriver
+    from Cricbuzz_files.config import team_names_dict
+
 
     ##Options for chromedriver, when using selenium, does not matter when using Collab since it acts more like a remote machine
 
@@ -102,13 +104,13 @@ def web_scrap(url):
         
     def find_toss():
         toss=cricbuzz_soup.find_all('p',{'class':"cb-com-ln ng-binding ng-scope cb-col cb-col-90"})
-        for i in toss:
-            if "won the toss" in i.get_text().lower():
-                print(i)
-                return i.get_text()
-            else:
-                return None
-            
+        for paragraph in toss:
+            bold_elements = paragraph.find_all('b')
+        
+        # Check each <b> tag to see if it contains the text "won the toss"
+            for bold in bold_elements:
+                if "won the toss" in bold.get_text().lower():
+                    return paragraph.get_text()
     
     def team_names():
         team_names=cricbuzz_soup.find('div',{'class':"cb-billing-plans-text cb-team-lft-item"})
@@ -133,7 +135,7 @@ def web_scrap(url):
         preview_obj=cricbuzz_soup.find_all('p',{'class':'cb-com-ln ng-binding ng-scope cb-col cb-col-90'})
         for i in preview_obj:
             #print(i.text)
-            if 'subs' in i.text.lower() and (team in i.text or short_name(team) in i.text):
+            if 'subs' in i.text.lower() and (team in i.text or team_names_dict[team] in i.text):
                 return i.get_text()
 
     #find the playing 11 of each teams
@@ -143,7 +145,7 @@ def web_scrap(url):
         for i in preview_obj:
             #print(i.text)
 
-            if '(Playing XI)'.casefold() in i.text.casefold() and (team in i.text or short_name(team) in i.text):
+            if '(Playing XI)'.casefold() in i.text.casefold() and (team in i.text or team_names_dict[team] in i.text):
                 return i.get_text()
     
     # get the player of the match
@@ -239,18 +241,11 @@ def web_scrap(url):
     match_commentary_df['season']=year
     match_commentary_df['venue']=venue
     match_commentary_df['date']=date
-    if toss_string == None:           
-        match_commentary_df['toss']= "Not started"
-        match_commentary_df['winner']="Not started"
-        match_commentary_df['player_of_the_match']="Not started"
-        match_commentary_df['toss_winner']= "Not started"
-        match_commentary_df['toss_choosen']= "Not started"
-    else:
-        match_commentary_df['toss']=find_toss()
-        match_commentary_df['winner']=winner
-        match_commentary_df['player_of_the_match']=playe_of_the_match
-        match_commentary_df['toss_winner']= short_name(toss_string[:toss_string.find('have')].strip())
-        match_commentary_df['toss_choosen']= toss_string.split(' ')[-1]
+    match_commentary_df['toss']=find_toss()
+    match_commentary_df['winner']=winner
+    match_commentary_df['player_of_the_match']=playe_of_the_match
+    match_commentary_df['toss_winner']= team_names_dict[toss_string[:toss_string.find('have')].strip()]
+    match_commentary_df['toss_choosen']= toss_string.split(' ')[-1]
 
     #print(match_commentary_df)
     match_commentary_df.to_csv(f"Scraped__raw_files/{match_name}.csv",index=False)
